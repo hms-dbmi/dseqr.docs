@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Dseqr"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+titleAddition = "End-to-End RNA-Seq Platform"
+description = "Dseqr is a web application that helps you run end-to-end fastq-to-pathways single-cell and bulk RNA-seq analyses"
 
 ## Open Graph + Twitter Cards
 images = ["doks.png"]

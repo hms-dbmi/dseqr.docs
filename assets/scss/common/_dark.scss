@@ -38,6 +38,10 @@ body.dark .btn-primary {
   color: $body-bg-dark !important;
 }
 
+body.dark .bg-primary {
+  background-color: $link-color-dark !important;
+}
+
 body.dark .navbar {
   background: $body-bg-dark;
   opacity: 0.975;

@@ -6,8 +6,6 @@ deployButton.addEventListener("click", (event) => {
   deployCountdown();
 });
 
-const deployDseqr = () => {};
-
 const deployCountdown = () => {
   var isDeployed = false;
   const http = new XMLHttpRequest();

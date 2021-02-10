@@ -3,7 +3,7 @@
 ## Homepage
 title = "Dseqr"
 titleSeparator = "-"
-titleAddition = "End-to-End RNA-Seq Platform"
+titleAddition = "End-to-End RNA-Seq Analysis"
 description = "Dseqr is a web application that helps you run end-to-end fastq-to-pathways single-cell and bulk RNA-seq analyses"
 
 ## Open Graph + Twitter Cards

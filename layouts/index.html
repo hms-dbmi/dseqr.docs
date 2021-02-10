@@ -10,7 +10,7 @@
         <div class="progress" id="deploy-progress">
           <div class="progress-bar bg-primary" id="deploy-progress-bar" style="width:0%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ .Site.Data.doks.version }}</a></p>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/hms-dbmi/dseqr">GitHub v{{ .Site.Data.doks.version }}</a></p>
     </div>
   </div>
 </section>
@@ -21,30 +21,32 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
-        <h2 class="h4">Security aware</h2>
-        <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+        <h2 class="h4">Multi sample support</h2>
+        <p>Runs <a href="https://osca.bioconductor.org/multi-sample-comparisons.html#differential-expression-between-conditions">pseudobulk</a> differential expression analyses. For each cluster, compare a set of test samples to a set of control samples.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Fast by default</h2>
-        <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+        <h2 class="h4">Sensible defaults</h2>
+        <p>Follows recommendations from the  <a href="http://bioconductor.org/books/release/OSCA/">OSCA</a> handbook so that you can focus on biological questions, not bioinformatics.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">SEO-ready</h2>
-        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+        <h2 class="h4">Multiple integration algos</h2>
+        <p>Integrate samples with either <a href="http://bioconductor.org/books/release/OSCA/integrating-datasets.html">FastMNN</a> or <a href='https://github.com/immunogenomics/harmony'>harmony</a>.</p>
       </div>
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
-        <h2 class="h4">Full text search</h2>
-        <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+        <h2 class="h4">Flexible QC</h2>
+        <p>Start with default filtering or DIY (or both). Custom metrics and subsetting allow you to further refine your QC based on
+          mitochondrial/ribosomal percent, library size, doublet score, or gene expression.
+        </p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Page layouts</h2>
-        <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
+        <h2 class="h4">Automated labeling</h2>
+        <p>Quickly transfer labels from previously annotated datasets or built-in references. Easily discover and fix annotation mistakes by comparing any two clusters.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Dark mode</h2>
-        <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+        <h2 class="h4">Environmentally concious</h2>
+        <p>Our servers shut down 24 hours after you hit deploy. Your analyses persist between shutdowns, not your footprint.</p>
       </div>
     </div>
   </div>

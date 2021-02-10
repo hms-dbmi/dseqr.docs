@@ -91,3 +91,4 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/clipboard"
     target = "assets/js/vendor/clipboard"
+

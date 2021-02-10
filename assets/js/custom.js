@@ -29,6 +29,9 @@ const checkDeployed = (callback) => {
 };
 
 const handleCheckDeployed = (isDeployed) => {
+  // updates shutdown timer for lambda
+  runDeploy();
+
   if (isDeployed) {
     console.log("OKaY!");
     setDeployed();
@@ -48,13 +51,16 @@ const setDeployed = () => {
   deployButton.classList.add("btn-warning");
 };
 
-const deployCountdown = async () => {
-  deployButton.classList.add("disabled");
+runDeploy = () => {
   const url =
     "https://jdy8c3206d.execute-api.us-east-2.amazonaws.com/default/CDKLambdaDockerStack-functionF19B1A04-19ENMIG8VNAYN";
   const http = new XMLHttpRequest();
   http.open("GET", url);
   http.send(null);
+};
+
+const deployCountdown = () => {
+  deployButton.href = "https://drugseqr.com";
 
   var i = 0;
   var totaltime = 60 * 9;
@@ -64,7 +70,7 @@ const deployCountdown = async () => {
     var percent = ((totaltime - timeleft) / totaltime) * 100;
 
     var result = new Date(timeleft * 1000).toISOString().substr(15, 4);
-    deployButton.innerHTML = result;
+    deployButton.innerHTML = "~" + result;
     deployProgressBar.style.width = percent + "%";
 
     if (timeleft == 0) {

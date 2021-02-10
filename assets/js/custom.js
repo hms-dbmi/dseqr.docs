@@ -43,11 +43,13 @@ const setDeployed = () => {
   deployButton.href = "https://drugseqr.com";
   deployProgressBar.style.width = "100%";
   deployProgress.style.visibility = "hidden";
-  deployButton.classList.remove("btn-primary");
+  deployButton.classList.remove("btn-primary", "disabled");
+  deployButton.classList.add("btn-warning");
   deployButton.classList.add("btn-warning");
 };
 
 const deployCountdown = async () => {
+  deployButton.classList.add("disabled");
   const url =
     "https://jdy8c3206d.execute-api.us-east-2.amazonaws.com/default/CDKLambdaDockerStack-functionF19B1A04-19ENMIG8VNAYN";
   const http = new XMLHttpRequest();

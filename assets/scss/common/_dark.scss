@@ -28,6 +28,10 @@ body.dark a {
   color: $link-color-dark;
 }
 
+body.dark a.btn-warning {
+  color: $body-overlay-dark;
+}
+
 body.dark a.text-body {
   color: $body-color-dark !important;
 }

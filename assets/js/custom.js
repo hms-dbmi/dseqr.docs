@@ -44,7 +44,6 @@ const setDeployed = () => {
   deployProgressBar.style.width = "100%";
   deployProgress.style.visibility = "hidden";
   deployButton.classList.remove("btn-primary");
-  deployButton.classList.add("btn-warning");
 };
 
 const deployCountdown = async () => {

@@ -67,7 +67,6 @@ const deployCountdown = () => {
   totaltime = 60 * 9;
   var tend = tstart + totaltime;
   const interval = setInterval(function () {
-    i += 1;
     tnow = Date.now() / 1000;
     var timeleft = tend - tnow;
     var elapsed = totaltime - timeleft;

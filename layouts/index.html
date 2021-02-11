@@ -8,11 +8,11 @@
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
       <!-- to force btn-warning class on prod -->
         <a class="btn-warning" role="button" style="display:none"></a>
-        <a class="btn btn-primary btn-lg px-4 mb-2" id="deploy" target="_blank" role="button">Deploy Dseqr</a>
+        <a class="btn btn-primary btn-lg px-4 mb-2" id="deploy" target="_blank" role="button">Deploy Dseqr </a>
         <div class="progress" id="deploy-progress">
           <div class="progress-bar bg-primary" id="deploy-progress-bar" style="width:0%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/hms-dbmi/dseqr">GitHub v{{ .Site.Data.doks.version }}</a></p>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/hms-dbmi/dseqr" target="_blank">GitHub v{{ .Site.Data.doks.version }}</a></p>
     </div>
   </div>
 </section>
@@ -24,15 +24,15 @@
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
         <h2 class="h4">Multi sample support</h2>
-        <p>Runs <a href="https://osca.bioconductor.org/multi-sample-comparisons.html#differential-expression-between-conditions">pseudobulk</a> differential expression analyses. For each cluster, compare a set of test samples to a set of control samples.</p>
+        <p>Runs <a href="http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html" target="_blank">pseudobulk</a> differential expression analyses. For each cluster, compare a set of test samples to a set of control samples.</p>
       </div>
       <div class="col-lg-5">
         <h2 class="h4">Sensible defaults</h2>
-        <p>Follows recommendations from the  <a href="http://bioconductor.org/books/release/OSCA/">OSCA</a> handbook so that you can focus on biological questions, not bioinformatics.</p>
+        <p>Follows recommendations from the  <a href="http://bioconductor.org/books/release/OSCA/" target="_blank">OSCA</a> handbook so that you can focus on biological questions, not bioinformatics.</p>
       </div>
       <div class="col-lg-5">
         <h2 class="h4">Multiple integration algos</h2>
-        <p>Integrate samples with either <a href="http://bioconductor.org/books/release/OSCA/integrating-datasets.html">FastMNN</a> or <a href='https://github.com/immunogenomics/harmony'>harmony</a>.</p>
+        <p>Integrate samples with either <a href="http://bioconductor.org/books/release/OSCA/integrating-datasets.html" target="_blank">FastMNN</a> or <a href='https://github.com/immunogenomics/harmony' target="_blank">harmony</a>.</p>
       </div>
     </div>
     <div class="row justify-content-center text-center">

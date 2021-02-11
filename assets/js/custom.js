@@ -76,7 +76,7 @@ const deployCountdown = () => {
     deployButton.innerHTML = "~" + result;
     deployProgressBar.style.width = elapsedPercent + "%";
 
-    if (timeleft == 0) {
+    if (timeleft <= 0) {
       setDeployed();
       clearInterval(interval);
     }

@@ -52,8 +52,7 @@ const setDeployed = () => {
 };
 
 runDeploy = () => {
-  const url =
-    "https://jdy8c3206d.execute-api.us-east-2.amazonaws.com/default/CDKLambdaDockerStack-functionF19B1A04-T0R172PFMSUO";
+  const url = "https://ikhx4027h6.execute-api.us-east-2.amazonaws.com/default";
   const http = new XMLHttpRequest();
   http.open("GET", url);
   http.send(null);

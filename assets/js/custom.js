@@ -60,18 +60,22 @@ runDeploy = () => {
 };
 
 const deployCountdown = () => {
+  // make button clickable so that can check if deployed
   deployButton.href = "https://drugseqr.com";
 
-  var i = 0;
-  var totaltime = 60 * 9;
+  tstart = Date.now() / 1000;
+  totaltime = 60 * 9;
+  var tend = tstart + totaltime;
   const interval = setInterval(function () {
     i += 1;
-    var timeleft = totaltime - i;
-    var percent = ((totaltime - timeleft) / totaltime) * 100;
+    tnow = Date.now() / 1000;
+    var timeleft = tend - tnow;
+    var elapsed = totaltime - timeleft;
+    var elapsedPercent = (elapsed / totaltime) * 100;
 
     var result = new Date(timeleft * 1000).toISOString().substr(15, 4);
     deployButton.innerHTML = "~" + result;
-    deployProgressBar.style.width = percent + "%";
+    deployProgressBar.style.width = elapsedPercent + "%";
 
     if (timeleft == 0) {
       setDeployed();

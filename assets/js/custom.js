@@ -19,7 +19,7 @@ const checkDeployed = (callback) => {
   http.onreadystatechange = function (event) {
     if (http.readyState === 4) {
       if (http.status === 200) {
-        callback(true);
+        callback(false);
       } else {
         callback(false);
       }
@@ -33,7 +33,7 @@ const handleCheckDeployed = (isDeployed) => {
   runDeploy();
 
   if (isDeployed) {
-    console.log("OKaY!");
+    console.log("Infrastructure is Live!");
     setDeployed();
   } else {
     console.log("Launching AWS Infrastructure!");
@@ -59,12 +59,25 @@ runDeploy = () => {
   http.send(null);
 };
 
+const totaltime = 60 * 9;
+
 const deployCountdown = () => {
   // make button clickable so that can check if deployed
   deployButton.href = "https://drugseqr.com";
 
-  tstart = Date.now() / 1000;
-  totaltime = 60 * 9;
+  let tstart;
+  const curStart = Date.now() / 1000;
+  let prevStart = parseInt(localStorage.getItem("deployStart"));
+
+  if (prevStart && curStart - prevStart < totaltime) {
+    // re-use previous start
+    tstart = prevStart;
+  } else {
+    // reset deploy start and use current time
+    localStorage.setItem("deployStart", curStart);
+    tstart = curStart;
+  }
+
   var tend = tstart + totaltime;
   const interval = setInterval(function () {
     tnow = Date.now() / 1000;

@@ -22,7 +22,6 @@ Most buttons show a tooltip on hover that provides information about it's functi
 Hovering input values can also provide usefull information such as full names
 when too long or gene description for gene symbols.
 
-![Example image](./static/images/square.png)
 <!-- {{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." >}} -->
 <!-- Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/) -->
 

@@ -1,18 +1,30 @@
 [[docs]]
-  name = "Prologue"
+  name = "General"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "general"
+  url = "/docs/general/"
 
 [[docs]]
-  name = "Help"
+  name = "Single Cell"
   weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "single-cell"
+  url = "/docs/single-cell/"
+
+[[docs]]
+  name = "Bulk Data"
+  weight = 70
+  identifier = "bulk"
+  url = "/docs/bulk-data/"
+
+[[docs]]
+  name = "Drugs"
+  weight = 80
+  identifier = "drugs"
+  url = "/docs/drugs/"
 
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/general/usability/"
   weight = 10
 
 #[[main]]

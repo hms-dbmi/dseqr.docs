@@ -42,7 +42,7 @@ const handleCheckDeployed = (isDeployed) => {
 };
 
 const setDeployed = () => {
-  deployButton.innerHTML = "Open Dseqr";
+  deployButton.innerHTML = "Open dseqr";
   deployButton.href = "https://dseqr.com";
   deployProgressBar.style.width = "100%";
   deployProgress.style.visibility = "hidden";

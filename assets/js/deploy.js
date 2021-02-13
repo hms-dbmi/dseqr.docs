@@ -53,7 +53,7 @@ const setDeployed = () => {
 
 runDeploy = () => {
   const url =
-    "https://ikhx4027h6.execute-api.us-east-2.amazonaws.com/default/CDKLambdaDockerStack-DeployDseqrLambda4EF89A95-1VF3JYCJWV52O";
+    "https://ikhx4027h6.execute-api.us-east-2.amazonaws.com/default/DseqrFromLambdaStack-DeployDseqrLambda4EF89A95-1W8SZ4VL5CK6M";
   const http = new XMLHttpRequest();
   http.open("GET", url);
   http.send(null);

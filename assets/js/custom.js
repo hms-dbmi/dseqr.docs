@@ -4,7 +4,7 @@ const deployProgressBar = document.getElementById("deploy-progress-bar");
 
 if (deployButton) {
   deployButton.addEventListener("click", (event) => {
-    if (deployButton.hostname !== "drugseqr.com") {
+    if (deployButton.hostname !== "dseqr.com") {
       checkDeployed(handleCheckDeployed);
     }
   });
@@ -13,7 +13,7 @@ if (deployButton) {
 const checkDeployed = (callback) => {
   // check if site is active
   const http = new XMLHttpRequest();
-  const url = "https://drugseqr.com";
+  const url = "https://dseqr.com";
 
   http.open("OPTIONS", url);
   http.onreadystatechange = function (event) {
@@ -43,7 +43,7 @@ const handleCheckDeployed = (isDeployed) => {
 
 const setDeployed = () => {
   deployButton.innerHTML = "Open Dseqr";
-  deployButton.href = "https://drugseqr.com";
+  deployButton.href = "https://dseqr.com";
   deployProgressBar.style.width = "100%";
   deployProgress.style.visibility = "hidden";
   deployButton.classList.remove("btn-primary", "disabled");
@@ -63,7 +63,7 @@ const totaltime = 60 * 9;
 
 const deployCountdown = () => {
   // make button clickable so that can check if deployed
-  deployButton.href = "https://drugseqr.com";
+  deployButton.href = "https://dseqr.com";
 
   let tstart;
   const curStart = Date.now() / 1000;

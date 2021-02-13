@@ -2,7 +2,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
-  Cotent-Security-Policy: connect-src 'self' drugseqr.com jdy8c3206d.execute-api.us-east-2.amazonaws.com; font-src 'self' docs.drugseqr.com; img-src 'self' docs.drugseqr.com; script-src-elem docs.drugseqr.com; script-src 'self'; style-src-attr 'unsafe-inline'; style-src-elem docs.drugseqr.com; style-src 'self' 'unsafe-eval'
+  Cotent-Security-Policy: connect-src 'self' dseqr.com jdy8c3206d.execute-api.us-east-2.amazonaws.com; font-src 'self' docs.dseqr.com; img-src 'self' docs.dseqr.com; script-src-elem docs.dseqr.com; script-src 'self'; style-src-attr 'unsafe-inline'; style-src-elem docs.dseqr.com; style-src 'self' 'unsafe-eval'
   #Content-Security-Policy-Report-Only: default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://dseqr.report-uri.com/r/d/csp/wizard
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin

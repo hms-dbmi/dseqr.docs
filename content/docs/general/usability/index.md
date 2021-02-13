@@ -15,15 +15,22 @@ toc: true
 
 ### Tips on hover
 
-Most buttons show a tooltip on hover that provides information about it's functionality. 
+Most buttons show a tooltip on hover that provides information about it's functionality: 
+
+{{< img-simple src="tooltips.png" alt="Tooltips" class="border-1" >}}
+
 
 Hovering input values can also provide usefull information such as full names
-when too long or gene description for gene symbols.
+when too long or gene description for gene symbols:
+
+{{< img-simple src="title.png" alt="Titles" class="border-1" >}}
 
 
 ### Page tours
 
-Click the information icon at the top of any page for a guided tour of the main features.
+Click the information icon at the top of any page for a guided tour of the main features:
+
+{{< img-simple src="tour.png" alt="Tour" class="border-1" >}}
 
 
 ### Download plot data

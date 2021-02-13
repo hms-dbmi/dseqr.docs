@@ -19,7 +19,7 @@ const checkDeployed = (callback) => {
   http.onreadystatechange = function (event) {
     if (http.readyState === 4) {
       if (http.status === 200) {
-        callback(false);
+        callback(true);
       } else {
         callback(false);
       }
@@ -42,7 +42,7 @@ const handleCheckDeployed = (isDeployed) => {
 };
 
 const setDeployed = () => {
-  deployButton.innerHTML = "Open dseqr";
+  deployButton.innerHTML = "Open Dseqr →";
   deployButton.href = "https://dseqr.com";
   deployProgressBar.style.width = "100%";
   deployProgress.style.visibility = "hidden";

@@ -14,10 +14,12 @@ const checkDeployed = (callback) => {
   // check if site is active
   const http = new XMLHttpRequest();
   const url = "https://dseqr.com";
+  deployButton.classList.add("disabled");
 
   http.open("OPTIONS", url);
   http.onreadystatechange = function (event) {
     if (http.readyState === 4) {
+      deployButton.classList.remove("disabled");
       if (http.status === 200) {
         callback(true);
       } else {

@@ -1,7 +1,7 @@
 const deployButton = document.getElementById("deploy");
 const deployProgress = document.getElementById("deploy-progress");
 const deployProgressBar = document.getElementById("deploy-progress-bar");
-const deployTime = 60 * 9;
+const deployTime = 60 * 10;
 
 if (deployButton) {
   deployButton.addEventListener("click", (event) => {
@@ -95,6 +95,7 @@ const deployCountdown = (prevStart) => {
     if (timeleft <= 0) {
       setDeployed();
       clearInterval(interval);
+      localStorage.clear();
     }
   }, 1000); //calling it every 1 second
 };

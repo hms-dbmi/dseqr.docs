@@ -15,13 +15,12 @@ toc: true
 
 ### Tips on hover
 
-Most buttons show a tooltip on hover that provides information about it's functionality: 
+Most buttons show a tooltip on hover: 
 
 {{< img-simple src="tooltips.png" alt="Tooltips" class="border-1" >}}
 
 
-Hovering input values can also provide usefull information such as full names
-when too long or gene description for gene symbols:
+Hovering input values can also provide usefull information like full gene names:
 
 {{< img-simple src="title.png" alt="Titles" class="border-1" >}}
 
@@ -35,6 +34,6 @@ Click the information icon at the top of any page for a guided tour of the main 
 
 ### Download plot data
 
-Hover over any plot to download it's data. This allows you to customize plots with external software.
+Hover over any plot to download it's data:
 
 

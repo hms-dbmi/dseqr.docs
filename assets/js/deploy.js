@@ -102,7 +102,8 @@ const deployCountdown = (prevStart) => {
 const runDeploy = () => {
   const isDeployed = JSON.parse(localStorage.getItem("isDeployed"));
   const isCountdown = JSON.parse(localStorage.getItem("isCountdown"));
-  // update the destroy timer for lambda
+  // deploys dseqr onto aws
+  // also resets the destroy timer
   deploy();
 
   if (isDeployed) {

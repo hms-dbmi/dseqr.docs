@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "general"
-weight: 600
+weight: 100
 toc: true
 ---
 
@@ -36,4 +36,5 @@ Click the information icon at the top of any page for a guided tour of the main 
 
 Hover over any plot to download it's data:
 
+{{< img-simple src="download_data.png" alt="Download Plot Data" class="border-1" >}}
 

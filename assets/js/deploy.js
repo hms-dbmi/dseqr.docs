@@ -93,9 +93,9 @@ const deployCountdown = (prevStart) => {
     deployProgressBar.style.width = elapsedPercent + "%";
 
     if (timeleft <= 0) {
+      localStorage.clear();
       setDeployed();
       clearInterval(interval);
-      localStorage.clear();
     }
   }, 1000); //calling it every 1 second
 };

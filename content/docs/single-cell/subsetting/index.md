@@ -9,7 +9,7 @@ images: []
 menu: 
   docs:
     parent: "single-cell"
-weight: 220
+weight: 240
 toc: true
 ---
 
@@ -27,8 +27,6 @@ Subsetting can be set to either exclude (default) or include cells that match th
 {{< img-simple src="qc-subset-features.png" alt="QC Subset" class="border-1" >}}
 
 Inclusion is usefull for selecting cells of interest to be re-clustered. This will generally increase the number of clusters as highly variable genes will be specific to the selected cells. 
-
-{{< alert icon="💡" text="<a href='http://bioconductor.org/books/release/OSCA/feature-selection.html#feature-selection-subsetting'>Highly variable genes</a> are the within top 10% of biological variance</br></br>The number of PCs for clustering is chosen <a href='http://bioconductor.org/books/release/OSCA/dimensionality-reduction.html#based-on-population-structure'>based on population structure</a>" >}}
 
 ### Custom genes for clustering
 

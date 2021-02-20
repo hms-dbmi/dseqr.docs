@@ -1,7 +1,7 @@
 ---
 title: "Compare Samples"
 description: ""
-lead: ""
+lead: "Compare expression, abundance, and pathways between test and control samples."
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00
 draft: false

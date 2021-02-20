@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "drugs"
-weight: 630
+weight: 430
 toc: true
 ---
 

@@ -45,7 +45,6 @@ Dseqr runs Gene Ontology and KEGG [pathway analyses](https://www.bioconductor.or
 
 {{< alert icon="💡" text="The authors of the above functions usually ignore GO terms with p-values greater than about 10<sup>-5</sup>" >}}
 
-([cameraPR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3458527/))
 
 ### Visual exploration
 

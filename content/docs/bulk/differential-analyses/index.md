@@ -1,7 +1,7 @@
 ---
 title: "Differential Analyses"
 description: "Run expression and pathway analyses between test and control samples."
-lead: ""
+lead: "Run expression and pathway analyses between test and control samples."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -13,7 +13,7 @@ weight: 330
 toc: true
 ---
 
-### Download differential analyses
+### Download analyses
 
 To run differential expression and pathway analyses, first select a test group followed by a control group. Then click the download button: 
 

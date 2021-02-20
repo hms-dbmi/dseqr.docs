@@ -1,7 +1,7 @@
 ---
 title: "Advanced Options"
 description: ""
-lead: ""
+lead: "How to sort and filter query results."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false

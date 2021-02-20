@@ -1,7 +1,7 @@
 ---
 title: "Perturbation Datasets"
 description: ""
-lead: ""
+lead: "Description of L1000 and CMAP02 perturbation datasets."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Custom Signatures"
 description: ""
-lead: ""
+lead: "How to upload a custom query signature."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false

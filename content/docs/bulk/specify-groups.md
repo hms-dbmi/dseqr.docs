@@ -1,7 +1,7 @@
 ---
 title: "Specify Groups"
 description: ""
-lead: ""
+lead: "How to specify groups for comparison."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false

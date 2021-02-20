@@ -1,7 +1,7 @@
 ---
 title: "Integrate Samples"
 description: ""
-lead: "How to integrate test and control samples."
+lead: "How to integrate test and control samples. Prerequisite for sample comparison."
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00
 draft: false

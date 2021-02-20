@@ -32,7 +32,7 @@ Dseqr runs Gene Ontology and KEGG [pathway analyses](https://www.bioconductor.or
 
 ### Surrogate variable analysis
 
-Discovered surrogate variables can be optionally included as covariates for differential expression analyses:
+Discovered [surrogate variables](https://bioconductor.org/packages/release/bioc/html/sva.html) can be optionally included as covariates for differential expression analyses:
 
 {{< img-simple src="bulk-sva.png" alt="Choose SVs" class="border-1" >}}
 

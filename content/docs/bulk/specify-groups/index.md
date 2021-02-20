@@ -17,6 +17,7 @@ toc: true
 
 To specify groups for comparison, download the groups csv and fill in the *Group name*  column and optionally the *Pairs* column:
 
+{{< img-simple src="bulk-groups.png" alt="Specify Groups" class="border-1" >}}
 
 {{< alert icon="💡" text="The Pairs column is used to indicate paired samples (e.g. same individual pre/post treatment)" >}}
 

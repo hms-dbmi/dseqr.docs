@@ -19,7 +19,6 @@ To run differential expression and pathway analyses, first select a test group f
 
 {{< img-simple src="bulk-diff.png" alt="Download Analyses" class="border-1" >}}
 
-{{< alert icon="💡" text="The Pairs column is used to indicate paired samples - e.g. same individual pre/post treatment. If provided, pairs are used as a blocking variable for differential expression analyses with <a href='https://bioconductor.org/packages/release/bioc/html/limma.html'>limma</a>." >}}
 
 ### Pathway analyses
 
@@ -49,7 +48,7 @@ Discovered [surrogate variables](https://bioconductor.org/packages/release/bioc/
 
 ### Gene plots
 
-Viewing raw logcounts for a gene can be a useful addition to summary statistics. To show logcounts for a gene of interest summarized by groups, select gene(s) to show expression for:
+Viewing raw logcounts for a gene can be a useful addition to summary statistics. To show logcounts for a gene of interest summarized by groups, select a gene to show expression for:
 
 {{< img-simple src="bulk-gene-plot.png" alt="Gene plots" class="border-1" >}}
 

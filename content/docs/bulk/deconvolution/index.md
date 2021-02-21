@@ -13,6 +13,8 @@ weight: 340
 toc: true
 ---
 
+{{< alert icon="💡" text="Cell type deconvolution is performed by <a href='https://academic.oup.com/bioinformatics/article/35/12/2093/5165376'>dtangle</a>." >}}
+
 ### Run deconvolution
 
 To run deconvolution, select a bulk dataset and click the cell-type deconvolution toggle:

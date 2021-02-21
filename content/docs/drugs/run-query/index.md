@@ -45,17 +45,23 @@ A sorted table of top results is shown:
 
 {{< alert icon="💡" text="For L1000 signatures, only the top 1500 results are shown. You can download the full query results if a compound of interest is not in the top results." >}}
 
+You can change the table sorting  and filter for specific cell lines by clicking the advanced options toggle:
+
+{{< img-simple src="drugs-advanced.png" alt="Query Genes" class="border-1" >}}
+
 ### Plot perturbation effect
 
-To view the predicted effect of a query result on the query genes, *Select a perturbation for plot:*
+To view the predicted effect of a perturbation on the query genes, *Select a perturbation for plot:*
 
 {{< img-simple src="drugs-pert-plot.png" alt="Plot Perturbation" class="border-1" >}}
 
-{{< alert icon="💡" text="Perturbation effect arrows start at query effect size values and end at the sum of query and perturbation effect sizes." >}}
-
-{{< alert icon="💡" text="Perturbation effect arrows start at query effect size values and end at the sum of query and perturbation effect sizes." >}}
-
-### Advanced options
+{{< alert icon="💡" text="Arrows showing perturbation effects start at query effect size values and end at the sum of query and perturbation effect sizes." >}}
 
 
 ### Perturbation as query
+
+You can use expression profiles from the reference datasets to query for similar and opposing signatures in the reference datasets. 
+
+To do so either search for a signature in the *Select a dataset or query signature* or right click on a correlation point and click *Load as query*:
+
+{{< img-simple src="drugs-load-pert.png" alt="Plot Perturbation" class="border-1" >}}

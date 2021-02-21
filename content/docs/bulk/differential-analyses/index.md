@@ -44,4 +44,13 @@ Discovered [surrogate variables](https://bioconductor.org/packages/release/bioc/
 
 {{< alert icon="💡" text="Adjusted logcounts are computed by <a href='http://research.libd.org/jaffelab/reference/cleaningY.html'>regressing out</a> <i>Pairs</i> and surrogate variables." >}}
 
-{{< alert icon="💡" text="Adjusted logcounts are used only for visualization. For differential expression analyses, <i>Pairs</i> and surrogate variables are used as covariates with non-adjusted logcounts." >}}
+{{< alert icon="💡" text="Adjusted logcounts are used only for MDS visualization. For differential expression analyses, <i>Pairs</i> and surrogate variables are used as covariates with non-adjusted logcounts." >}}
+
+
+### Gene plots
+
+Viewing raw logcounts for a gene can be a useful addition to summary statistics. To show logcounts for a gene of interest summarized by groups, select gene(s) to show expression for:
+
+{{< img-simple src="bulk-gene-plot.png" alt="Gene plots" class="border-1" >}}
+
+{{< alert icon="💡" text="Gene plots use non-adjusted logcounts." >}}

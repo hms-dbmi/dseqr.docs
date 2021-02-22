@@ -66,7 +66,7 @@ Source:
 
   var index = new FlexSearch({
     preset: 'score',
-    cache: true,
+    cache: false,
     doc: {
         id: 'id',
         field: [

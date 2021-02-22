@@ -1,6 +1,6 @@
 ---
 title: "Custom Signatures"
-description: ""
+description: "How to upload a custom perturbation query signature."
 lead: "How to upload a custom query signature."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00

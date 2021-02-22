@@ -1,6 +1,6 @@
 ---
 title: "Workspaces"
-description: ""
+description: "Private, group, and public workspaces."
 lead: "Private, group, and public workspaces."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00

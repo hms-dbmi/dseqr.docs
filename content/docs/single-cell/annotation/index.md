@@ -1,6 +1,6 @@
 ---
 title: "Cluster Annotation"
-description: ""
+description: "How to annotate single-cell clusters."
 lead: "How to annotate clusters."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00

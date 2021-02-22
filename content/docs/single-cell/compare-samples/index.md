@@ -1,6 +1,6 @@
 ---
 title: "Multi Sample Comparison"
-description: ""
+description: "Compare expression, abundance, and pathways between test and control samples."
 lead: "Compare expression, abundance, and pathways between test and control samples."
 date: 2020-11-12T13:26:54+01:00
 lastmod: 2020-11-12T13:26:54+01:00

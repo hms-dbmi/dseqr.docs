@@ -1,6 +1,6 @@
 ---
 title: "Cell Type Deconvolution"
-description: ""
+description: "Estimate cell type proportions in bulk samples using a single-cell dataset."
 lead: "Estimate cell type proportions in bulk samples using a single-cell dataset."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00

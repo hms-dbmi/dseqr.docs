@@ -1,6 +1,6 @@
 ---
 title: "Run Queries"
-description: ""
+description: "How to run drug and genetic perturbation queries."
 lead: "How to run drug and genetic perturbation queries."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00

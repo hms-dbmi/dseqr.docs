@@ -19,7 +19,7 @@ To upload a custom query signature, click the toggle custom signature button, en
 
 {{< img-simple src="drugs-custom.png" alt="Custom Query" class="border-1" >}}
 
-{{< alert icon="💡" text="The uploaded custom query csv requirements:</br></br>1) first column is unique HGNC symbols</br>2) either: </br>- I. a column named <i>dprime</i> or <i>logFC</i> or</br>- II. a column of effect size values as it's second column">}}
+{{< alert icon="💡" text="Requirements for uploaded custom query csv:</br></br>1) first column is unique HGNC symbols</br>2) either: </br>- I. a column named <i>dprime</i> or <i>logFC</i> or</br>- II. the second column contains effect size values ">}}
 
 {{< alert icon="💡" text="For custom queries, all uploaded genes that were also measured by L1000/CMAP02 are used. In contrast, query signatures from the Single-Cell or Bulk tabs use only the top 200 most differentially expressed genes.">}}
 

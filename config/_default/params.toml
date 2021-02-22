@@ -40,7 +40,7 @@ footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\
 
 # Alert
 alert = true
-alertText = "Like Dseqr? <a class=\"alert-link\" href=\"https://github.com/hms-dbmi/dseqr.docs/stargazers\">Star on GitHub</a>. Thanks!</a>"
+alertText = "Like Dseqr? <a class=\"alert-link\" href=\"https://github.com/hms-dbmi/dseqr/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
 # Edit Page
 docsRepo = "https://github.com/hms-dbmi/dseqr.docs"

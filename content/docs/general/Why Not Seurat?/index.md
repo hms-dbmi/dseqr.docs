@@ -16,7 +16,7 @@ toc: true
 
 ### Empty droplet detection
 
-Dseqr uses [kallisto bustools](https://www.biorxiv.org/content/10.1101/673285v2) for quantification and the [emptyDrops](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y) function for detecting empty droplets. Both of these tools can also be used within the Seurat workflow.
+Dseqr uses [kallisto bustools](https://www.biorxiv.org/content/10.1101/673285v2) for quantification and the [emptyDrops](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y) function for detecting empty droplets. Both of these tools can also be used upstream of Seurat.
 
 {{< alert icon="💡" text="<a href='https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y'>emptyDrops</a> retains distinct cell types that simple knee point thresholds discard. emptyDrops has also been <a href='https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview'>adapted by Cell Ranger V3</a>." >}}
 

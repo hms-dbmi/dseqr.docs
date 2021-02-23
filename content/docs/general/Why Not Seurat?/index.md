@@ -1,7 +1,7 @@
 ---
 title: "Why not Seurat?"
-description: "Why we switched from using the Seurat SCTransform workflow to the Bioconductor SingleCellExperiment ecosystem."
-lead: "Why we switched from using the <i>Seurat SCTransform</i> workflow to the Bioconductor <i>SingleCellExperiment</i> ecosystem."
+description: "Workflow choices that influenced our switch from Seurat SCTransform to the Bioconductor SingleCellExperiment ecosystem."
+lead: "Workflow choices that influenced our switch from <i>Seurat SCTransform</i> to the Bioconductor <i>SingleCellExperiment</i> ecosystem."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false

@@ -22,13 +22,6 @@ Although Cell Ranger V3 has also [adapted emptyDrops](https://support.10xgenomic
 
 Seurat doesn't provide any specific functionality for detecting empty droplets. 
 
-### Cluster based PC selection
-
-Dseqr uses [getClusteredPCs](http://bioconductor.org/books/release/OSCA/dimensionality-reduction.html) to automate the selection of principle components (PCs) for clustering. From the OSCA handbook:
-
-> "This strategy is the most pragmatic as it directly addresses the role of the bias-variance trade-off in downstream analyses, specifically clustering. There is no need to preserve biological signal beyond what is distinguishable in later steps. However, it involves strong assumptions about the nature of the biological differences between subpopulations - and indeed, discrete subpopulations may not even exist in studies of continuous processes like differentiation. It also requires repeated applications of the clustering procedure on increasing number of PCs, which may be computationally expensive."
-
-
 ### Pairwise marker gene detection
 
 The [Bioconductor workflow](http://bioconductor.org/books/release/OSCA/marker-detection.html#pairwise-tests-between-clusters) determines marker genes by comparing a cluster of interest to each other cluster and then performing a meta-analysis over all pairwise comparisons. In Seurat, a cluster of interest is compared to all other cells. Through personal observation, the Bioconductor workflow pulls out robust markers that are sometimes buried in Seurat. Here is the rationale from the OSCA handbook for pairwise methods:

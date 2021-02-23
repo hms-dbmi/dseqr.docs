@@ -16,11 +16,13 @@ toc: true
 
 ### Empty droplet detection
 
-Seurat doesn't provide any functionality for detecting empty droplets. The [emptyDrops](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y) function from Bioconductor has become the standard and has been [adapted by](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview) Cell Ranger.
+Seurat doesn't provide any functionality for detecting empty droplets. 
+
+The [emptyDrops](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y) function from Bioconductor has become the standard and has been [adapted by](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview) Cell Ranger.
 
 ### Cluster based PC selection
 
-[getClusteredPCs](http://bioconductor.org/books/release/OSCA/dimensionality-reduction.html) is used to choose number of principle components (PCs) for clustering. It maximizes the number of distinct sub-populations up until the point that additional noise reduces resolution. The downside of *getClusteredPCs* is that it is quite slow as it checks all possible number of PCs up to 50 for the number of clusters produced.
+Dseqr uses [getClusteredPCs](http://bioconductor.org/books/release/OSCA/dimensionality-reduction.html) as a pragmatic way to choose number of principle components (PCs) for clustering. It attempts to maximize the number of distinct sub-populations up until the point that additional noise reduces resolution. The downside of *getClusteredPCs* is that it is quite slow as it checks all possible number of PCs up to 50 for the number of clusters produced.
 
 
 ### Pairwise marker gene detection
@@ -32,17 +34,17 @@ The [Bioconductor workflow](http://bioconductor.org/books/release/OSCA/marker-de
 
 ### Batch correction for pseudobulk
 
-For both workflows, integration is only used to align cells into the same cluster. The corrected values do not get used in any downstream analyses. 
+For both workflows, integration is only used to align cells into the same cluster. The corrected values do not get used in any downstream analyses. However, the [OSCA workflow](http://bioconductor.org/books/release/OSCA/integrating-datasets.html) implements library size adjustment between samples with *multiBatchNorm*.
 
-The [OSCA workflow](http://bioconductor.org/books/release/OSCA/integrating-datasets.html) adjusts between samples for library size with *multiBatchNorm*. This should protect against situations where, for example, a particular transcript is detected in one sample but not another because the second sample had systematically smaller library sizes and so the transcript in question was below the detection threshold. Seurat does not have comparable functionality.
+*multiBatchNorm* protects against situations where, for example, a particular transcript is detected in one sample but not another due to systematically smaller library sizes. Seurat does not have comparable functionality.
 
 ### Pseudobulk differential expression
 
 The *SingleCellExperiment* ecosystem provides [utilities](https://osca.bioconductor.org/multi-sample-comparisons.html) to run pseudo-bulk differential expression analyses per cluster when there are multiple control and test samples. 
 
-This allows you to use standard bulk RNA-Seq pipelines and the level of replication is at the sample level instead of assuming every cell is an independent biological replicate. This has a couple of nice properties including reasonable p-values. 
+Pseudobulk analyses use standard bulk RNA-seq pipelines where the level of replication is the sample instead of assuming every cell is an independent biological replicate. This results in reasonable p-values. 
 
-Importantly, pseudobulk outperforms non-pseudobulk methods when [benchmarked](https://www.biorxiv.org/content/biorxiv/early/2019/07/26/713412.full.pdf). 
+Importantly, pseudobulk methods outperform non-pseudobulk methods when [benchmarked](https://www.biorxiv.org/content/biorxiv/early/2019/07/26/713412.full.pdf). 
 
 ### SCTransform downsides
 
@@ -52,7 +54,7 @@ Some [examples](https://ltla.github.io/SingleCellThoughts/general/transformation
 
 The OSCA handbook provides [recommendations](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html#ambient-problems) for dealing with ambient expression.
 
-Ambient expression arrises from differential lysis between samples into the cell suspension. For example: RBCs lysing  → Hemoglobin detected in all cells  → Hemoglobin shows up as differentially expressed as compared to a sample without this issue. 
+Ambient expression arrises from differential lysis between samples into the cell suspension. For example: RBCs lysing → Hemoglobin detected in all droplets → Hemoglobin shows up as differentially expressed as compared to samples without this issue. Seurat does not provide any recommendations for ambient expression.
 
 ### Time and memory
 

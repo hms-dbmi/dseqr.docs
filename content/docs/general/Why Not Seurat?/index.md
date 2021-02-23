@@ -16,13 +16,17 @@ toc: true
 
 ### Empty droplet detection
 
-Seurat doesn't provide any functionality for detecting empty droplets. 
+The [emptyDrops](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y) function from Bioconductor retains distinct cell types that simple knee point thresholds discard. 
 
-The [emptyDrops](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y) function from Bioconductor has become the standard and has been [adapted by](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview) Cell Ranger.
+Although Cell Ranger V3 has also [adapted emptyDrops](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview), Dseqr uses [kallisto bustools](https://www.biorxiv.org/content/10.1101/673285v2) which is up to 51x faster than Cell Ranger and runs in constant memory. 
+
+Seurat doesn't provide any specific functionality for detecting empty droplets. 
 
 ### Cluster based PC selection
 
-Dseqr uses [getClusteredPCs](http://bioconductor.org/books/release/OSCA/dimensionality-reduction.html) as a pragmatic way to choose number of principle components (PCs) for clustering. It attempts to maximize the number of distinct sub-populations up until the point that additional noise reduces resolution. The downside of *getClusteredPCs* is that it is quite slow as it checks all possible number of PCs up to 50 for the number of clusters produced.
+Dseqr uses [getClusteredPCs](http://bioconductor.org/books/release/OSCA/dimensionality-reduction.html) to automate the selection of principle components (PCs) for clustering. From the OSCA handbook:
+
+> "This strategy is the most pragmatic as it directly addresses the role of the bias-variance trade-off in downstream analyses, specifically clustering. There is no need to preserve biological signal beyond what is distinguishable in later steps. However, it involves strong assumptions about the nature of the biological differences between subpopulations - and indeed, discrete subpopulations may not even exist in studies of continuous processes like differentiation. It also requires repeated applications of the clustering procedure on increasing number of PCs, which may be computational expensive."
 
 
 ### Pairwise marker gene detection
@@ -40,22 +44,29 @@ For both workflows, integration is only used to align cells into the same cluste
 
 ### Pseudobulk differential expression
 
-The *SingleCellExperiment* ecosystem provides [utilities](https://osca.bioconductor.org/multi-sample-comparisons.html) to run pseudo-bulk differential expression analyses per cluster when there are multiple control and test samples. 
+The *SingleCellExperiment* ecosystem provides [utilities](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html) to run pseudo-bulk differential expression analyses per cluster when there are multiple control and test samples. The OSCA handbook provides the following justifications for pseudo-bulking:
 
-Pseudobulk analyses use standard bulk RNA-seq pipelines where the level of replication is the sample instead of assuming every cell is an independent biological replicate. This results in reasonable p-values. 
+> * Larger counts are more amenable to standard DE analysis pipelines designed for bulk RNA-seq data. Normalization is more straightforward and certain statistical approximations are more accurate [...] 
+> * Collapsing cells into samples reflects the fact that our biological replication occurs at the sample level. Each sample is represented no more than once for each condition, avoiding problems from unmodelled correlations between samples. Supplying the per-cell counts directly to a DE analysis pipeline would imply that each cell is an independent biological replicate, which is not true from an experimental perspective.
+> * Variance between cells within each sample is masked, provided it does not affect variance across (replicate) samples. This avoids penalizing DEGs that are not uniformly up- or down-regulated for all cells in all samples of one condition. Masking is generally desirable as DEGs - unlike marker genes - do not need to have low within-sample variance to be interesting, e.g., if the treatment effect is consistent across replicate populations but heterogeneous on a per-cell basis. (Of course, high per-cell variability will still result in weaker DE if it affects the variability across populations, while homogeneous per-cell responses will result in stronger DE due to a larger population-level log-fold change. These effects are also largely desirable.)
 
 Importantly, pseudobulk methods outperform non-pseudobulk methods when [benchmarked](https://www.biorxiv.org/content/biorxiv/early/2019/07/26/713412.full.pdf). 
-
-### SCTransform downsides
-
-Some [examples](https://ltla.github.io/SingleCellThoughts/general/transformation.html) from the authors of the Bioconductor workflow of where *SCTransform* can cause issues.
 
 ### Ambient expression
 
 The OSCA handbook provides [recommendations](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html#ambient-problems) for dealing with ambient expression.
 
-Ambient expression arrises from differential lysis between samples into the cell suspension. For example: RBCs lysing → Hemoglobin detected in all droplets → Hemoglobin shows up as differentially expressed as compared to samples without this issue. Seurat does not provide any recommendations for ambient expression.
+Ambient expression arrises from differential lysis between samples into the cell suspension. For example: RBCs lysing → Hemoglobin detected in all droplets → Hemoglobin shows up as differentially expressed as compared to samples without this issue. Seurat does not provide any recommendations for handling ambient expression.
+
+
+### SCTransform downsides
+
+Some [analysis](https://ltla.github.io/SingleCellThoughts/general/transformation.html) from the authors of the Bioconductor workflow of potential and real downsides of *SCTransform*. In particular:
+
+> The transformed values from sctransform exhibit no relation to the original scale of the (log-)counts. This is not a problem for exploratory analyses but makes it difficult to interpret differential expression analyses [...]</br></br>
+> {{< img-simple src="sctransform.png" alt="Bulk Data Import" class="border-1" >}}
+
 
 ### Time and memory
 
-The Seurat SCTransform workflow generates a non-sparse expression matrix. This makes integration of multiple samples very slow and requires large amounts of RAM.
+The Seurat *SCTransform* workflow generates a non-sparse expression matrix. This makes integration of multiple samples very slow and requires large amounts of RAM.

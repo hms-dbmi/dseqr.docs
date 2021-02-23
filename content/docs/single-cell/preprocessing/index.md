@@ -21,9 +21,11 @@ The [OSCA](http://bioconductor.org/books/release/OSCA/) handbook was used to gui
 
 {{< alert icon="💡" text="kallisto v0.46.0 is used for pseudo-quantification with an index built using GRCh38 release 94." >}}
 
+{{< alert icon="💡" text="kallisto bustools is up to <a href='https://twitter.com/lpachter/status/1140663795435495432?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1140663795435495432%7Ctwgr%5E%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Flpachter2Fstatus2F1140663795435495432widget%3DTweet'>51 times faster than Cell Ranger</a> and runs in constant memory." >}}
+
 ### Droplet processing
 
-{{< alert icon="💡" text="Empty droplets are detected using <a href='http://bioconductor.org/books/release/OSCA/droplet-processing.html#qc-droplets'>emptyDrops</a>. Cell Ranger version 3 also <a href='https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview'>uses</a> an alogithm based on emptyDrops." >}}
+{{< alert icon="💡" text="Empty droplets are detected using <a href='https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y'>emptyDrops</a>, which retains distinct cell types that simple knee point thresholds discard. emptyDrops has also been <a href='https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview'>adapted by Cell Ranger V3</a>." >}}
 
 
 ### Feature selection

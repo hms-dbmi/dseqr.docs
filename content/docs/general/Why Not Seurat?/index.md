@@ -14,14 +14,6 @@ toc: true
 ---
 
 
-### Empty droplet detection
-
-Dseqr uses [kallisto bustools](https://www.biorxiv.org/content/10.1101/673285v2) for quantification and the [emptyDrops](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y) function for detecting empty droplets. Both of these tools can also be used upstream of Seurat.
-
-{{< alert icon="💡" text="<a href='https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y'>emptyDrops</a> retains distinct cell types that simple knee point thresholds discard. emptyDrops has also been <a href='https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/algorithms/overview'>adapted by Cell Ranger V3</a>." >}}
-
-{{< alert icon="💡" text="kallisto bustools is up to <a href='https://twitter.com/lpachter/status/1140663795435495432?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1140663795435495432%7Ctwgr%5E%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Flpachter2Fstatus2F1140663795435495432widget%3DTweet'>51 times faster than Cell Ranger</a> and runs in constant memory." >}}
-
 ### Pairwise marker gene detection
 
 The [Bioconductor workflow](http://bioconductor.org/books/release/OSCA/marker-detection.html#pairwise-tests-between-clusters) determines marker genes by comparing a cluster of interest to each other cluster and then performing a meta-analysis over all pairwise comparisons. In Seurat, a cluster of interest is compared to all other cells.

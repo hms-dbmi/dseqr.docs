@@ -15,12 +15,12 @@ facebookPublisher = "alexvpickering"
 ogLocale = "en_US"
 
 ## JSON-LD
-schemaType = "Dseqr"
+schemaType = "Organization"
 schemaLogo = "logo-dseqr.png"
 schemaTwitter = "https://twitter.com/alexvpickering"
 schemaLinkedIn = "https://www.linkedin.com/in/alexvpickering/"
 schemaGitHub = "https://github.com/alexvpickering"
-# schemaSection = "blog"
+schemaSection = "docs"
 
 ## Sitelinks Search Box
 siteLinksSearchBox = true

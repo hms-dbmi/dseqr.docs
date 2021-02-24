@@ -7,7 +7,7 @@ titleAddition = "RNA-Seq Analysis"
 description = "Dseqr runs multi-sample single-cell and bulk RNA-seq analyses from fastq → pathways → hits."
 
 ## Open Graph + Twitter Cards
-images = ["dseqr.png"]
+images = ["hiv-in-blood-plasma-david-goodsell.png"]
 twitterSite = "alexvpickering"
 twitterCreator = "alexvpickering"
 facebookAuthor = "alexvpickering"
@@ -16,7 +16,7 @@ ogLocale = "en_US"
 
 ## JSON-LD
 schemaType = "Dseqr"
-schemaLogo = "dseqr.png"
+schemaLogo = "logo-dseqr.png"
 schemaTwitter = "https://twitter.com/alexvpickering"
 schemaLinkedIn = "https://www.linkedin.com/in/alexvpickering/"
 schemaGitHub = "https://github.com/alexvpickering"

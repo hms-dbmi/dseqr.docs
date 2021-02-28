@@ -85,6 +85,11 @@ body.dark .alert-warning {
   color: $body-color-dark;
 }
 
+body.dark .alert-lead {
+  background:  rgba(251,247,240, 0.05);
+  color: $body-color-dark;
+}
+
 body.dark .page-links a {
   color: $body-color-dark;
 }

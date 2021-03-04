@@ -52,7 +52,7 @@ With samples comparison, select a gene to see expression side-by-side in test an
 
 {{< img-simple src="multi-plot-cells.png" alt="Compare Groups Plot" class="border-1" >}}
 
-{{< alert icon="💡" text="Within each cluster, the group with more cells is downsampled so that visual differences are driven by cell abundance." >}}
+{{< alert icon="💡" text="Within each cluster, the group with more cells is downsampled so that visual differences are not driven by cell abundance." >}}
 
 You are also shown the distribution of logcounts across each sample for the selected cluster:
 

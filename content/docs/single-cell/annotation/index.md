@@ -48,6 +48,8 @@ Comparing two clusters is particularly useful for distinguishing closely related
 
 {{< alert icon="💡" text="To exit two-cluster comparisons, click the toggle button again." >}}
 
+{{< alert icon="💡" text="As with one-vs-all comparisons, two-cluster comparisons only shows up-regulated genes. As such, the opposite comparisons (e.g. <b>1-vs-2</b> and <b>2-vs-1</b>) will have different markers." >}}
+
 ### Exploring marker genes
 
 Selecting a gene will plot its logcounts in cells and clusters:

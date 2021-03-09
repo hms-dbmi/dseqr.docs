@@ -19,7 +19,7 @@ A good starting point for cluster annotation is to transfer labels from an exist
 
 {{< img-simple src="annotate-transfer.png" alt="Label Transfer" class="border-1" >}}
 
-{{< alert icon="💡" text="Label transfer uses <a href='http://bioconductor.org/books/release/OSCA/cell-type-annotation.html'>SingleR</a> and includes the Blueprint Encode Data (discribed in previous link) as an external reference." >}}
+{{< alert icon="💡" text="Label transfer uses <a href='http://bioconductor.org/books/release/OSCA/cell-type-annotation.html'>SingleR</a> and includes the <i>Blueprint Encode Data</i> for human samples and the <i>Mouse RNAseq Data</i> for mouse samples (discribed in previous link) as external references." >}}
 
 
 ### Change cluster name

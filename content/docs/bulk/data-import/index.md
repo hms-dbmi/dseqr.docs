@@ -21,7 +21,7 @@ To create a bulk dataset, type a new dataset name and click *"Add name"*:
 
 Either select previously uploaded data or upload new data. 
 
-{{< alert icon="💡" text="Supported eset.rds file uploads:</br>- from local dseqr runs </br>- microarray and RNA-seq datasets processed with <a href='https://www.bioconductor.org/packages/release/bioc/html/crossmeta.html'>crossmeta</a>" >}}
+{{< alert icon="💡" text="Supported eset.qs file uploads:</br>- from local dseqr runs </br>- microarray and RNA-seq datasets processed with <a href='https://www.bioconductor.org/packages/release/bioc/html/crossmeta.html'>crossmeta</a>" >}}
 
 {{< alert icon="💡" text="Supported fastq.gz file uploads:</br>- paired or single-ended (up to 30GB each) </br></br><b>FastQ files are deleted 24 hours after upload.</b>" >}}
 

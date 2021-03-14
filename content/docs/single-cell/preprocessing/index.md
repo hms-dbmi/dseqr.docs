@@ -36,9 +36,9 @@ The [OSCA](http://bioconductor.org/books/release/OSCA/) handbook was used to gui
 
 ### Dimensionality reduction and clustering
 
-{{< alert icon="💡" text="The number of principle components to detect clusters and generate TSNE plots is chosen <a href='http://bioconductor.org/books/release/OSCA/dimensionality-reduction.html#based-on-population-structure'>based on population structure</a>." >}}
+{{< alert icon="💡" text="The top 30 principle components are used to detect clusters and generate TSNE plots." >}}
 
-{{< alert icon="💡" text="<a href='http://bioconductor.org/books/release/OSCA/clustering.html#other-parameters'>Clustering</a> uses the walktrap algorithm for datasets with less than 10k cells (OSCA default) and louvain clustering for datasets with more than 10k cells (Seurat default)." >}}
+{{< alert icon="💡" text="Clustering uses the leiden algorithm and the resolution parameter can be adjusted." >}}
 
 
 ### Marker genes

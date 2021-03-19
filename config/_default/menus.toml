@@ -24,7 +24,7 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/general/usability/"
+  url = "/docs/single-cell/add-dataset/"
   weight = 10
 
 #[[main]]

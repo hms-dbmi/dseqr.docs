@@ -13,6 +13,8 @@ weight: 120
 toc: true
 ---
 
+{{< alert icon="💡" text="We now use Seurat for reference-based annotation with the human PBMC reference from <a href='https://azimuth.hubmapconsortium.org/references/'>Azimuth</a> (more soon)!</br></br> Reference-based annotation is available during dataset creation, subsetting, and integration." >}}
+
 
 ### Pairwise marker gene detection
 

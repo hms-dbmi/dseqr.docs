@@ -16,14 +16,6 @@ toc: true
 {{< alert icon="💡" text="We now use Seurat for reference-based annotation with the human PBMC reference from <a href='https://azimuth.hubmapconsortium.org/references/'>Azimuth</a> (more soon)!</br></br> Reference-based annotation is available during dataset creation, subsetting, and integration." >}}
 
 
-### Pairwise marker gene detection
-
-The [Bioconductor workflow](http://bioconductor.org/books/release/OSCA/marker-detection.html#pairwise-tests-between-clusters) determines marker genes by comparing a cluster of interest to each other cluster and then performing a meta-analysis over all pairwise comparisons. In Seurat, a cluster of interest is compared to all other cells.
-
-Here is the rationale from the OSCA handbook for pairwise methods:
-
-> "We intentionally use pairwise comparisons between clusters rather than comparing each cluster to the average of all other cells. The latter approach is sensitive to the population composition, potentially resulting in substantially different sets of markers when cell type abundances change in different contexts. In the worst case, the presence of a single dominant subpopulation will drive the selection of top markers for every other cluster, pushing out useful genes that can resolve the various minor subpopulations."
-
 ### Pseudobulk differential expression
 
 The *SingleCellExperiment* ecosystem provides [utilities](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html) to run pseudo-bulk differential expression analyses per cluster when there are multiple control and test samples. The OSCA handbook provides the following justifications for pseudo-bulking:

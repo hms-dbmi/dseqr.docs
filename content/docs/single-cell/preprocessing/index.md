@@ -43,4 +43,4 @@ The [OSCA](http://bioconductor.org/books/release/OSCA/) handbook was used to gui
 
 ### Marker genes
 
-{{< alert icon="💡" text="Pairwise <a href='http://bioconductor.org/books/release/OSCA/marker-detection.html#using-the-wilcoxon-rank-sum-test'>Wilcoxon rank sum tests</a> are used to sort up-regulated marker genes for each cluster." >}}
+{{< alert icon="💡" text="<a href='http://bioconductor.org/books/release/OSCA/marker-detection.html#using-the-wilcoxon-rank-sum-test'>Wilcoxon rank sum tests</a> calculated with <a href='https://www.biorxiv.org/content/10.1101/653253v1'>presto</a> are used to sort up-regulated marker genes for each cluster." >}}

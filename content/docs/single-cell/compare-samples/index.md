@@ -13,6 +13,8 @@ weight: 260
 toc: true
 ---
 
+{{< img-simple src="multi-abundance.png" alt="Differential Abundance" class="border-1" >}}
+
 ## Select groups to compare
 
 To run differential analyses between test and control samples:

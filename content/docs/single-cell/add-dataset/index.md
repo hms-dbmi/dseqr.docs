@@ -25,6 +25,6 @@ To create a single-cell dataset type a new dataset name and click *"Add name"*. 
 {{< img-simple src="sc-create.gif" alt="Rectangle" class="border-1" >}}
 
 
-{{< alert icon="💡" text="Supported Cell Ranger file uploads:</br>- raw_feature_bc_matrix.h5 or </br>- matrix.mtx, barcodes.tsv, and genes.tsv" >}}
+{{< alert icon="💡" text="Supported Cell Ranger file uploads:</br>- raw_feature_bc_matrix.h5 or </br>- matrix.mtx(.gz), barcodes.tsv(.gz), and genes|features.tsv(.gz)" >}}
 {{< alert icon="💡" text="Supported fastq.gz file uploads:</br>- 10X Genomics 3' (up to 30GB each) </br></br><b>FastQ files are deleted 24 hours after upload.</b>" >}}
 {{< alert icon="💡" text="- Cell Ranger files from either human or mouse are supported.</br>- Only human fastq.gz files are currently supported. </br></br><a href='mailto:alexvpickering@gmail.com'>submit a request →</a>" >}}

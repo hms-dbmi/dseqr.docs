@@ -22,12 +22,11 @@ To run differential expression and pathway analyses, first select a test group f
 
 ### Pathway analyses
 
-Dseqr runs Gene Ontology and KEGG [pathway analyses](https://www.bioconductor.org/packages/devel/workflows/vignettes/RnaSeqGeneEdgeRQL/inst/doc/edgeRQL.html#pathway-analysis) using two methods:
-1. Over-representation analysis of significantly up- and down-regulated genes. Significance is defined as FDR < 0.05. This uses [goana and kegga](https://www.bioconductor.org/packages/devel/workflows/vignettes/RnaSeqGeneEdgeRQL/inst/doc/edgeRQL.html#pathway-analysis) and is not run if there are no significant genes.
-2. Competitive gene set test which uses test statistics for all genes. This uses [cameraPR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3458527/) and is always included.
+Dseqr runs Gene Ontology over-representation analysis of significantly up- and down-regulated genes. This uses a cached adaptation of [goana](https://www.bioconductor.org/packages/devel/workflows/vignettes/RnaSeqGeneEdgeRQL/inst/doc/edgeRQL.html#pathway-analysis).
 
-{{< alert icon="💡" text="The authors of the above functions usually ignore GO terms with p-values greater than about 10<sup>-5</sup>" >}}
+{{< alert icon="💡" text="Adaptations to goana:</br></br>- Uses genes with FDR < 0.05 with a min of 50 up/down.</br>- Uses expressed genes as a background (from edgeR::filterByExpr).</br>- Removes terms with fewer than 4 up/down genes (too few).</br>- Removes terms with more than 250 genes (too broad).</br>- Removes terms with Δup-down < 3 genes per 10 (not distinctly up/down).</br>- Keeps terms with FDR < 0.05 (not significant).</br>- Removes terms with FDR < 0.05 for up and down (not distinctly up/down)" >}}
 
+{{< alert icon="💡" text="Terms are grouped if their set of up/down genes have a jaccard similarity > 0.7 (smallest FDR is parent)." >}}
 
 ### Surrogate variable analysis
 

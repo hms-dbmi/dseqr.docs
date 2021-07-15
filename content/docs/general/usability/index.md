@@ -38,3 +38,9 @@ Hover over any plot to download it's data:
 
 {{< img-simple src="download_data.png" alt="Download Plot Data" class="border-1" >}}
 
+### Zoom single-cell plots
+
+Brush and double click single-cell dot and grid plots to zoom. Double click to zoom back out:
+
+{{< img-simple src="zoom-sc.png" alt="Zoom Single-Cell" class="border-1" >}}
+

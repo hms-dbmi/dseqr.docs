@@ -15,18 +15,23 @@ toc: true
 
 <!-- {{< alert icon="🚧" text="Currently only supports Cell Ranger uploads. <a href = \"mailto:alexvpickering@gmail.com\">Submit Request →</a>" >}} -->
 
-
+<div class="border border-1 rounded img-simple p-1 img-fluid gif">
+  <img src="Peek 2021-10-03 15-47-2.gif" alt="Upload"/>
+</div>
 
 ### Add datasets
 
 
-To add single-cell datasets click add datasets: 
+To add single-cell datasets:
+-  click add datasets
+-  drag and drop files to upload
+-  and provide a sample name for associated files
+-  When done, click **Import Datasets**
 
-{{< img-simple src="add_datasets1.png" alt="Click Add" class="border-1" >}}
+<!-- {{< img-simple src="add_datasets1.png" alt="Click Add" class="border-1" >}} -->
 
-Then drag and drop files to upload and provide a sample name for associated files. When done, click **Import Datasets**:
 
-{{< img-simple src="add_datasets.png" alt="Click Add" class="border-1" >}}
+<!-- {{< img-simple src="add_datasets.png" alt="Click Add" class="border-1" >}} -->
 
 
 {{< alert icon="💡" text="Supported Cell Ranger file uploads:</br>- raw_feature_bc_matrix.h5 or </br>- *matrix.mtx(.gz), *barcodes.tsv(.gz), and *genes|features.tsv(.gz)" >}}

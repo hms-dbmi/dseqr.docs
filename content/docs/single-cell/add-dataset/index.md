@@ -25,8 +25,8 @@ toc: true
 To add single-cell datasets:
 -  click add datasets
 -  drag and drop files to upload
--  and provide a sample name for associated files
--  When done, click **Import Datasets**
+-  provide a sample name for associated files
+-  when done, click **Import Datasets**
 
 <!-- {{< img-simple src="add_datasets1.png" alt="Click Add" class="border-1" >}} -->
 

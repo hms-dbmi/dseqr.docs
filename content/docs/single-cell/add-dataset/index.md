@@ -16,7 +16,7 @@ toc: true
 <!-- {{< alert icon="🚧" text="Currently only supports Cell Ranger uploads. <a href = \"mailto:alexvpickering@gmail.com\">Submit Request →</a>" >}} -->
 
 <div class="border border-1 rounded img-simple p-1 img-fluid gif">
-  <img src="Peek 2021-10-03 15-47-2.gif" alt="Upload"/>
+  <img src="upload.gif" alt="Upload"/>
 </div>
 
 ### Add datasets

@@ -27,9 +27,12 @@ function createDemoVideo(id) {
     video.loop = true;
     video.setAttribute('disablepictureinpicture', '');
     video.setAttribute('controlslist', 'nodownload nofullscreen noplaybackrate');
-
-    //It is a small screen
-    landingVideoContainer.append(video);
+    
+    video.load();
+    video.addEventListener('loadeddata', function() {
+        // Video is loaded and can be played
+        landingVideoContainer.append(video);
+     }, false);
 }
 
 loadDemoVideo();

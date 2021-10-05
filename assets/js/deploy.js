@@ -1,4 +1,5 @@
 const deployButton = document.getElementById("deploy");
+const deployInfo = document.getElementById("deploy-info");
 const deployProgress = document.getElementById("deploy-progress");
 const deployProgressBar = document.getElementById("deploy-progress-bar");
 const deployTime = 60 * 10;
@@ -58,6 +59,7 @@ const setDeployed = () => {
   deployProgress.style.visibility = "hidden";
   deployButton.classList.remove("btn-primary", "disabled");
   deployButton.classList.add("btn-warning");
+  deployInfo.setAttribute("style", "display: none !important");
 };
 
 deploy = () => {

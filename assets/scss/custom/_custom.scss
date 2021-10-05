@@ -3,18 +3,35 @@ body.dark .progress-bar.bg-primary {
 }
 
 .landing-video video {
-    display: block;
     margin: 0 auto;
     border: 1px solid #ddd;
     margin-top: 20px;
 }
 
+#demo-large {
+    display: none;
+}
 
-@media (max-width: 1548px) {
-    .landing-video video {
-        display:none !important;
+#demo-small {
+    display: block;
+}
+
+
+@media (min-width: 1548px) {
+    #demo-large {
+        display: block;
+    }
+    #demo-small {
+        display: none;
     }
 }
+
+@media (max-width: 830px) {
+    #demo-small {
+        display: none;
+    }
+}
+
 
 video::-webkit-media-controls-fullscreen-button {
     display: none !important;

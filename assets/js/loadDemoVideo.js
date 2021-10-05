@@ -15,7 +15,7 @@ function loadDemoVideo() {
 
 function createDemoVideo(id) {
 
-    const landingVideoContainer = document.getElementById('landing-video-container');
+    const landingVideoContainer = document.getElementById(id + '-container');
     const video = document.createElement('video');
 
     video.id = id;

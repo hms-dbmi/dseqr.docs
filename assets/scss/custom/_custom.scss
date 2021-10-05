@@ -2,33 +2,33 @@ body.dark .progress-bar.bg-primary {
     color: $body-bg-dark !important;
 }
 
-.landing-video video {
+.demo-video video {
     display: block;
     margin: 0 auto;
     border: 1px solid #ddd;
     margin-top: 20px;
 }
 
-#demo-large {
+#demo-large-container {
     display: none;
 }
 
-#demo-small {
+#demo-small-container {
     display: block;
 }
 
 
 @media (min-width: 1548px) {
-    #demo-large {
+    #demo-large-container {
         display: block;
     }
-    #demo-small {
+    #demo-small-container {
         display: none;
     }
 }
 
 @media (max-width: 830px) {
-    #demo-small {
+    #demo-small-container {
         display: none;
     }
 }

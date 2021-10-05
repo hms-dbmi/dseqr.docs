@@ -1,7 +1,3 @@
-
-
-
-
 function loadDemoVideo() {
     const windowWidth = window.innerWidth;
     let id;
@@ -28,8 +24,8 @@ function createDemoVideo(id) {
     video.autoplay = true;
     video.controls = true;
     video.loop = true;
-    video.setAttribute("disablepictureinpicture", true);
-    video.setAttribute("controlslist", "nodownload nofullscreen noplaybackrate");
+    video.setAttribute('disablepictureinpicture', true);
+    video.setAttribute('controlslist', 'nodownload nofullscreen noplaybackrate');
 
     //It is a small screen
     landingVideoContainer.append(video);

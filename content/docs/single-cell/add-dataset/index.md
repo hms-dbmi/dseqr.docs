@@ -15,6 +15,10 @@ toc: true
 
 <!-- {{< alert icon="🚧" text="Currently only supports Cell Ranger uploads. <a href = \"mailto:alexvpickering@gmail.com\">Submit Request →</a>" >}} -->
 
+<!-- 
+GIFs look best at full width (637px)
+height can vary as desired
+ -->
 <div class="border border-1 rounded img-simple p-1 img-fluid gif">
   <img src="upload.gif" alt="Upload"/>
 </div>

@@ -7,26 +7,34 @@
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
       <!-- to force btn-warning class on prod -->
-        <div class="btn-warning" tyle="display:none"></div>
-        <button class="btn btn-primary btn-lg px-4 mb-2" id="deploy">Deploy Dseqr</button>
-        <div class="progress" id="deploy-progress">
-          <div class="progress-bar bg-primary" id="deploy-progress-bar" style="width:0%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <p class="meta">Open-source MIT Licensed. <a href="https://github.com/hms-dbmi/dseqr" target="_blank">GitHub v{{ .Site.Data.doks.version }}</a></p>
+      <div class="btn-warning" tyle="display:none"></div>
+      <button class="btn btn-primary btn-lg px-4 mb-2" id="deploy">Deploy Dseqr</button>
+      <div class="progress" id="deploy-progress">
+        <div class="progress-bar bg-primary" id="deploy-progress-bar" style="width:0%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/hms-dbmi/dseqr" target="_blank">GitHub v{{ .Site.Data.doks.version }}</a></p>
     </div>
-  </section>
-  {{ end }}
-  
-  {{ define "sidebar-prefooter" }}
-  <div class="d-flex justify-content-start">
-    <div class="bg-dots"></div>
   </div>
-  <div class="alert alert-lead d-flex text-center" role="alert">
-    <div class="w-100">💡 Deploy takes ~10 minutes and stays up for 48 hours.</br> Up-time resets with each open.</div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<div class="d-flex justify-content-start">
+  <div class="bg-dots"></div>
+</div>
+
+<!-- video -->
+<div class="row justify-content-center">
+  <div style="max-width: 1546px;">
+
+      <video width="100%" height="auto" controls autoplay loop disablepictureinpicture controlslist="nodownload nofullscreen noplaybackrate" style="border: 1px solid #ddd;">
+        <source src="/demo.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
   </div>
-  
-  <section class="section section-sm">
+</div>
+
+<section class="section section-sm">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
@@ -62,7 +70,12 @@
 </section>
 {{ end }}
 
+
+
 {{ define "sidebar-footer" }}
+<div class="alert alert-lead d-flex text-center" role="alert">
+  <div class="w-100">💡 Deploy takes ~10 minutes and stays up for 48 hours.</br> Up-time resets with each open.</div>
+</div>
 <section class="section section-sm container-fluid">
   <div class="row justify-content-center text-center">
     <div class="col-lg-9">

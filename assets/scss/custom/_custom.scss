@@ -2,23 +2,14 @@ body.dark .progress-bar.bg-primary {
     color: $body-bg-dark !important;
 }
 
-.landing-video {
-    flex: 0 0 97%;
-    max-width: 97%;
-    position: relative;
-    width: 100%;
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
 .landing-video video {
-    max-width: 1546px;
     display: block;
     margin: 0 auto;
     border: 1px solid #ddd;
 }
 
-@media (max-width: 1023px) {
+
+@media (max-width: 1548px) {
     .landing-video video {
         display:none !important;
     }

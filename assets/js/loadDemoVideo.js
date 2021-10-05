@@ -22,9 +22,10 @@ function createDemoVideo(id) {
     video.src = '/' + id + '.mp4';
     // video.height = "auto";
     video.autoplay = true;
+    video.muted = true;
     video.controls = true;
     video.loop = true;
-    video.setAttribute('disablepictureinpicture', true);
+    video.setAttribute('disablepictureinpicture', '');
     video.setAttribute('controlslist', 'nodownload nofullscreen noplaybackrate');
 
     //It is a small screen

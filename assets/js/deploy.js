@@ -1,11 +1,11 @@
-const deployButton = document.getElementById("deploy");
-const deployInfo = document.getElementById("deploy-info");
-const deployProgress = document.getElementById("deploy-progress");
-const deployProgressBar = document.getElementById("deploy-progress-bar");
+const deployButton = document.getElementById('deploy');
+const deployInfo = document.getElementById('deploy-info');
+const deployProgress = document.getElementById('deploy-progress');
+const deployProgressBar = document.getElementById('deploy-progress-bar');
 const deployTime = 60 * 10;
 
 if (deployButton) {
-  deployButton.addEventListener("click", (event) => {
+  deployButton.addEventListener('click', (event) => {
     runDeploy();
   });
 }
@@ -13,9 +13,9 @@ if (deployButton) {
 const checkDeployed = (callback) => {
   // check if site is active
   const http = new XMLHttpRequest();
-  const url = "https://dseqr.com";
+  const url = 'https://dseqr.com';
 
-  http.open("OPTIONS", url);
+  http.open('OPTIONS', url);
   http.onreadystatechange = function (event) {
     if (http.readyState === 4) {
       if (http.status === 200) {
@@ -29,7 +29,7 @@ const checkDeployed = (callback) => {
 };
 
 const handleInitDeploy = (isDeployed) => {
-  localStorage.setItem("isDeployed", isDeployed);
+  localStorage.setItem('isDeployed', isDeployed);
 
   // initialize deploy button
   if (isDeployed) {
@@ -39,10 +39,10 @@ const handleInitDeploy = (isDeployed) => {
 
   // re-initialize timer
   const curStart = Date.now() / 1000;
-  let prevStart = parseInt(localStorage.getItem("deployStart")) || false;
+  let prevStart = parseInt(localStorage.getItem('deployStart')) || false;
 
   const continueCountdown = prevStart && curStart - prevStart < deployTime;
-  localStorage.setItem("isCountdown", continueCountdown);
+  localStorage.setItem('isCountdown', continueCountdown);
 
   if (continueCountdown) {
     deployCountdown(prevStart);
@@ -53,25 +53,25 @@ const handleInitDeploy = (isDeployed) => {
 checkDeployed(handleInitDeploy);
 
 const setDeployed = () => {
-  localStorage.setItem("isDeployed", true);
-  deployButton.innerHTML = "Open Dseqr →";
-  deployProgressBar.style.width = "100%";
-  deployProgress.style.visibility = "hidden";
-  deployButton.classList.remove("btn-primary", "disabled");
-  deployButton.classList.add("btn-warning");
-  deployInfo.setAttribute("style", "display: none !important");
+  localStorage.setItem('isDeployed', true);
+  deployButton.innerHTML = 'Open Dseqr →';
+  deployProgressBar.style.width = '100%';
+  deployProgress.style.visibility = 'hidden';
+  deployButton.classList.remove('btn-primary', 'disabled');
+  deployButton.classList.add('btn-warning');
+  deployInfo.setAttribute('style', 'display: none !important');
 };
 
 deploy = () => {
   const url =
-    "https://ikhx4027h6.execute-api.us-east-2.amazonaws.com/default/DseqrFromLambdaStack-DeployDseqrLambda4EF89A95-1W8SZ4VL5CK6M";
+    'https://ikhx4027h6.execute-api.us-east-2.amazonaws.com/default/DseqrFromLambdaStack-DeployDseqrLambda4EF89A95-1W8SZ4VL5CK6M';
   const http = new XMLHttpRequest();
-  http.open("GET", url);
+  http.open('GET', url);
   http.send(null);
 };
 
 const deployCountdown = (prevStart) => {
-  localStorage.setItem("isCountdown", true);
+  localStorage.setItem('isCountdown', true);
 
   const curStart = Date.now() / 1000;
   if (prevStart && curStart - prevStart < deployTime) {
@@ -79,7 +79,7 @@ const deployCountdown = (prevStart) => {
     deployStart = prevStart;
   } else {
     // reset deploy start and use current time
-    localStorage.setItem("deployStart", curStart);
+    localStorage.setItem('deployStart', curStart);
     deployStart = curStart;
   }
 
@@ -91,8 +91,8 @@ const deployCountdown = (prevStart) => {
     var elapsedPercent = (elapsed / deployTime) * 100;
 
     var result = new Date(timeleft * 1000).toISOString().substr(15, 4);
-    deployButton.innerHTML = "~" + result;
-    deployProgressBar.style.width = elapsedPercent + "%";
+    deployButton.innerHTML = '~' + result;
+    deployProgressBar.style.width = elapsedPercent + '%';
 
     if (timeleft <= 0) {
       localStorage.clear();
@@ -103,8 +103,8 @@ const deployCountdown = (prevStart) => {
 };
 
 const runDeploy = () => {
-  const isDeployed = JSON.parse(localStorage.getItem("isDeployed"));
-  const isCountdown = JSON.parse(localStorage.getItem("isCountdown"));
+  const isDeployed = JSON.parse(localStorage.getItem('isDeployed'));
+  const isCountdown = JSON.parse(localStorage.getItem('isCountdown'));
   // deploys dseqr onto aws
   // also resets the destroy timer
   deploy();
@@ -117,6 +117,6 @@ const runDeploy = () => {
 
   // if already deployed or currently counting down, allow checking if really deployed
   if (isDeployed || isCountdown) {
-    window.open("https://dseqr.com");
+    window.open('https://dseqr.com');
   }
 };

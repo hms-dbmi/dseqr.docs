@@ -4,7 +4,7 @@
 title = "Dseqr"
 titleSeparator = "-"
 titleAddition = "RNA-Seq Analysis"
-description = "Dseqr runs multi-sample single-cell and bulk RNA-seq analyses from fastq → pathways → hits."
+description = "Dseqr runs multi-sample single-cell and bulk RNA-seq analyses from counts → pathways → hits."
 
 ## Open Graph + Twitter Cards
 images = ["hiv-in-blood-plasma-david-goodsell.png"]

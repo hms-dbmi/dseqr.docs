@@ -15,28 +15,30 @@ toc: true
 
 ### Upload data
 
-To create a bulk dataset, type a new dataset name and click *"Add name"*:
+To create a bulk dataset, click __Add Datasets__ in the secondary navigation bar to open the upload modal. Then upload human fastq.gz files.
 
 {{< img-simple src="bulk-import.png" alt="Bulk Data Import" class="border-1" >}}
 
-Either select previously uploaded data or upload new data. 
 
-{{< alert icon="💡" text="Supported eset.qs file uploads:</br>- from local dseqr runs </br>- microarray and RNA-seq datasets processed with <a href='https://www.bioconductor.org/packages/release/bioc/html/crossmeta.html'>crossmeta</a>" >}}
+<!-- {{< alert icon="💡" text="Supported eset.qs file uploads:</br>- from local dseqr runs </br>- microarray and RNA-seq datasets processed with <a href='https://www.bioconductor.org/packages/release/bioc/html/crossmeta.html'>crossmeta</a>" >}} -->
 
-{{< alert icon="💡" text="Supported fastq.gz file uploads:</br>- paired or single-ended (up to 30GB each) </br></br><b>FastQ files are deleted 24 hours after upload.</b>" >}}
+{{< alert icon="💡" text="Supported fastq.gz file uploads:</br>- human paired or single-ended (up to 30GB each) </br></br><b>FastQ files are deleted 24 hours after upload.</b>" >}}
+
+{{< alert icon="💡" text="Click the trash can icon beside a file to remove it." >}}
+
+{{< alert icon="💡" text="Fastq.gz files can be uploaded a few at a time." >}}
 
 ### Specify pairs and replicates
 
-For pair-ended samples, select rows of paired samples and click *Paired*:
+For pair-ended samples, select rows of paired samples and click *Pairs*. Similarly indicate any replicates - i.e. the same sample split across multiple files:
 
 {{< img-simple src="bulk-paired.png" alt="Bulk Data Paired" class="border-1" >}}
 
-Similarly indicate any replicates - i.e. the same sample split across multiple files. 
 
-Finally, click *Run Quantification* to start pseudoquantification in the background.
+After providing a dataset name, click *Import Dataset* to start pseudoalignment in the background.
 
 ### Pseudoalignment
 
-{{< alert icon="💡" text="kallisto v0.46.0 is used for pseudo-quantification with an index built using GRCh38 release 94." >}}
+{{< alert icon="💡" text="kallisto v0.46.0 is used for pseudoalignment with an index built using GRCh38 release 94." >}}
 
 

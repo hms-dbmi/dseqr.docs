@@ -15,11 +15,13 @@ toc: true
 
 ### Specify datasets
 
-Click the toggle twice to open integration controls and select datasets to integrate: 
+Click __Integrate Datasets__ in the secondary navigation bar to open the integration modal. Then select datasets to integrate: 
 
 {{< img-simple src="integrate.png" alt="Select Integration" class="border-1" >}}
 
-Then select integration types and provide a new dataset name. To begin integration, click the plus button:
+{{< alert icon="💡" text="Three or more samples are needed for grid overlays and to calculate differential expression and abundance p-values.</br></br>Datasets with two samples will only show logFC." >}}
+
+Then select integration types and provide a new dataset name. To begin integration, click __Integrate Datasets__:
 
 {{< img-simple src="integrate-submit.png" alt="Select Datasets" class="border-1" >}}
 

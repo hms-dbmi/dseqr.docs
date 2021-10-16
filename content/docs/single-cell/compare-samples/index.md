@@ -20,12 +20,12 @@ toc: true
 To run differential analyses between test and control samples:
 1. select an integrated **dataset**
 2. click **samples** comparison
-3. Download, fill out, then upload group and pairs metadata
-4. Then select test and control groups to compare
+3. Open, fill out, and close the **edit sample groups** table
+4. Then specify test and control groups to compare
 
 {{< img-simple src="multi-groups.png" alt="Download Comparison" class="border-1" >}}
 
-{{< alert icon="💡" text="Pairs are used to indicate paired samples - e.g. same individual pre/post treatment. Sample pairs will be used as a blocking variable for pseudobulk mixed-effect differential expression analyses with <a href='https://bioconductor.org/packages/release/bioc/html/limma.html'>limma</a>." >}}
+<!-- {{< alert icon="💡" text="Pairs are used to indicate paired samples - e.g. same individual pre/post treatment. Sample pairs will be used as a blocking variable for pseudobulk mixed-effect differential expression analyses with <a href='https://bioconductor.org/packages/release/bioc/html/limma.html'>limma</a>." >}} -->
 
 {{< alert icon="💡" text="Dseqr uses limma-voom for pseudobulk and differential abundance analyses" >}}
 
@@ -54,11 +54,11 @@ A [differential abundance analysis](http://bioconductor.org/books/release/OSCA/m
 
 Dseqr runs Gene Ontology over-representation analysis of significantly up- and down-regulated genes. This uses a cached adaptation of [goana](https://www.bioconductor.org/packages/devel/workflows/vignettes/RnaSeqGeneEdgeRQL/inst/doc/edgeRQL.html#pathway-analysis).
 
-{{< alert icon="💡" text="Adaptations to goana:</br></br>- Uses genes with FDR < 0.05 with a min of 50 up/down.</br>- Uses expressed genes as a background (from edgeR::filterByExpr).</br>- Removes terms with fewer than 4 up/down genes (too few).</br>- Removes terms with more than 250 genes (too broad).</br>- Removes terms with Δup-down < 3 genes per 10 (not distinctly up/down).</br>- Keeps terms with FDR < 0.05 (not significant).</br>- Removes terms with FDR < 0.05 for up and down (not distinctly up/down)" >}}
+{{< alert icon="💡" text="Adaptations to goana:</br></br>- Uses genes with FDR < 0.05 with a min of 50 up/down.</br>- Uses expressed genes as a background (from edgeR::filterByExpr).</br>- Removes terms with fewer than 4 up/down genes (too few).</br>- Removes terms with more than 250 genes (too broad).</br>- Removes terms with Δup-down < 3 genes per 10 (not distinctly up/down).</br>- Removes terms with FDR > 0.05 (not significant).</br>- Removes terms with FDR < 0.05 for both up/down (not distinctly up/down)" >}}
 
 {{< alert icon="💡" text="Terms are grouped if their set of up/down genes have a jaccard similarity > 0.7 (smallest FDR is parent)." >}}
 
-{{< alert icon="💡" text="The Regex column in the GO csv can be pasted into the gene search box to explore significantly up/down genes for a term." >}}
+{{< alert icon="💡" text="The <b>Genes</b> column in the GO csv can be pasted into the gene search box to explore up/down genes for a term." >}}
 
 ### Visual exploration
 

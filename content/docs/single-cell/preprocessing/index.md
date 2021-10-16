@@ -36,7 +36,7 @@ The [OSCA](http://bioconductor.org/books/release/OSCA/) handbook was used to gui
 
 ### Dimensionality reduction and clustering
 
-{{< alert icon="💡" text="The top 30 principle components are used to detect clusters and generate TSNE plots." >}}
+{{< alert icon="💡" text="The top 30 principle components are used to detect clusters and generate UMAP plots." >}}
 
 {{< alert icon="💡" text="Clustering uses the leiden algorithm and the resolution parameter can be adjusted." >}}
 

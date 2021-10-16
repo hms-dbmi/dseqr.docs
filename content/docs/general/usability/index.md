@@ -32,15 +32,9 @@ Click the information icon at the top of any page for a guided tour of the main 
 {{< img-simple src="tour.png" alt="Tour" class="border-1" >}}
 
 
-### Download plot data
+### Interactive scatterplots
 
-Hover over any plot to download it's data:
-
-{{< img-simple src="download_data.png" alt="Download Plot Data" class="border-1" >}}
-
-### Zoom single-cell plots
-
-Brush and double click single-cell dot and grid plots to zoom. Double click to zoom back out:
+Scroll to zoom and drag to pan on scatterplots:
 
 {{< img-simple src="zoom-sc.png" alt="Zoom Single-Cell" class="border-1" >}}
 

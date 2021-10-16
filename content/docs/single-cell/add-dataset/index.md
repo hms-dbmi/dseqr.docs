@@ -39,5 +39,7 @@ To add single-cell datasets:
 
 
 {{< alert icon="💡" text="Supported Cell Ranger file uploads:</br>- raw_feature_bc_matrix.h5 or </br>- *matrix.mtx(.gz), *barcodes.tsv(.gz), and *genes|features.tsv(.gz)" >}}
-{{< alert icon="💡" text="Supported fastq.gz file uploads:</br>- 10X Genomics 3' (up to 30GB each) </br></br><b>FastQ files are deleted 24 hours after upload.</b>" >}}
-{{< alert icon="💡" text="- Cell Ranger files from all <a href='https://uswest.ensembl.org/info/about/species.html'>ensembl species</a> are supported.</br>- Only human fastq.gz files are currently supported. </br></br><a href='mailto:alexvpickering@gmail.com'>submit a request →</a>" >}}
+<!-- {{< alert icon="💡" text="Supported fastq.gz file uploads:</br>- 10X Genomics 3' (up to 30GB each) </br></br><b>FastQ files are deleted 24 hours after upload.</b>" >}} -->
+
+{{< alert icon="💡" text="- Cell Ranger files from all <a href='https://uswest.ensembl.org/info/about/species.html'>ensembl species</a> are supported.">}}
+<!-- </br>- Only human fastq.gz files are currently supported. </br></br><a href='mailto:alexvpickering@gmail.com'>submit a request →</a>" >}} -->

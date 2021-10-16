@@ -27,6 +27,9 @@ Next select a reference single-cell dataset and clusters that you want to use to
 
 Click *Submit cell-type deconvolution* to begin. 
 
+{{< alert icon="💡" text="Non-human reference single-cell datasets and first mapped to human homologs." >}}
+
+
 When complete, you will see a plot of the estimated proportion of each cell-type in each bulk sample, summarized by bulk sample groups:
 
 {{< img-simple src="bulk-deconvolution-plot.png" alt="Bulk Deconvolution" class="border-1" >}}

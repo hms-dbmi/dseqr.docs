@@ -13,9 +13,9 @@ weight: 120
 toc: true
 ---
 
-{{< alert icon="💡" text="Saved Seurat and SingleCellExperiment objects can be <a href='http://localhost:1313/docs/single-cell/add-dataset/'>imported</a> and exported." >}}
+{{< alert icon="💡" text="Seurat and SingleCellExperiment objects can be <a href='http://localhost:1313/docs/single-cell/add-dataset/'>imported</a> and exported." >}}
 
-{{< alert icon="💡" text="We use Seurat for reference-based annotation with references from <a href='https://azimuth.hubmapconsortium.org/references/'>Azimuth</a>.</br></br> Reference-based annotation is available during dataset creation, subsetting, and integration." >}}
+{{< alert icon="💡" text="We use Seurat reference-based annotation with references from <a href='https://azimuth.hubmapconsortium.org/references/'>Azimuth</a>.</br></br> Reference-based annotation is available during dataset creation, subsetting, and integration." >}}
 
 
 ### Pseudobulk differential expression

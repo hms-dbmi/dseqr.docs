@@ -13,8 +13,7 @@ weight: 120
 toc: true
 ---
 
-{{< alert icon="💡" text="Saved Seurat and SingleCellExperiment objects can now be <a href='http://localhost:1313/docs/single-cell/add-dataset/'>imported</a>." >}}
-{{< alert icon="💡" text="Exported SingleCellExperiment objects can be <a href='https://satijalab.org/seurat/reference/as.seurat'>converted</a> to Seurat objects." >}}
+{{< alert icon="💡" text="Saved Seurat and SingleCellExperiment objects can now be <a href='http://localhost:1313/docs/single-cell/add-dataset/'>imported</a> and exported." >}}
 
 {{< alert icon="💡" text="We now use Seurat for reference-based annotation with references from <a href='https://azimuth.hubmapconsortium.org/references/'>Azimuth</a>.</br></br> Reference-based annotation is available during dataset creation, subsetting, and integration." >}}
 

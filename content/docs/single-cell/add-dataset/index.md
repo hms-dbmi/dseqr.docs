@@ -31,7 +31,7 @@ To add single-cell datasets:
 
 {{< alert icon="💡" text="All <a href='https://uswest.ensembl.org/info/about/species.html'>ensembl species</a> are supported.">}}
 
-### Cell Ranger Files
+### Cell Ranger
 
 {{< alert icon="💡" text="Supported Cell Ranger file uploads:</br>- raw_feature_bc_matrix.h5 or </br>- *matrix.mtx(.gz), *barcodes.tsv(.gz), and *genes|features.tsv(.gz)" >}}
 
@@ -40,16 +40,16 @@ To add single-cell datasets:
 {{< alert icon="💡" text="Supported R file uploads:</br>- *.qs or *.rds </br>- <i>SingleCellExperiment</i> or <i>Seurat</i> objects" >}}
 
 Seurat object specifics:
-- <code>Idents(scdata)</code> or <code>scdata$seurat_clusters</code>: 
+- <code>scdata$seurat_clusters</code>: 
   - used as clusters
-- <code>levels(clusters)</code>: 
+- <code>levels(scdata$seurat_clusters)</code>: 
   - used as cluster annotation
-- <code>scdata$orig.ident</code>: 
+- <code>scdata$sample</code> or <code>scdata$orig.ident</code>: 
   - used as sample identity
+  - treated as integrated if > 1 values
 - <code>umap</code> or <code>tSNE</code> reduction: 
   - used for scatterplots
-  - taken from <code>integrated</code> assay if present
-- <code>scdata[['integrated']]</code> assay: 
-  - presence required if multiple samples
-  - uses <code>harmony</code> or <code>PCA</code> as corrected reduction
-  - uses <code>var.features</code> slot as highly variable genes
+- <code>harmony</code> or <code>PCA</code> reduction:
+  - used as corrected reduction for multiple samples
+- <code>var.features</code> slot:
+  - used as highly variable genes

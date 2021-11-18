@@ -40,16 +40,16 @@ To add single-cell datasets:
 {{< alert icon="💡" text="Supported R file uploads:</br>- *.qs or *.rds </br>- <i>SingleCellExperiment</i> or <i>Seurat</i> objects" >}}
 
 Seurat object specifics:
-- <code>scdata$seurat_clusters</code>: 
+- <code>Idents(scdata)</code>: 
   - used as clusters
-- <code>levels(scdata$seurat_clusters)</code>: 
+- <code>levels(Idents(scdata))</code>: 
   - used as cluster annotation
 - <code>scdata$sample</code> or <code>scdata$orig.ident</code>: 
   - used as sample identity
-  - treated as integrated if > 1 values
+  - treated as integrated if > 1 unique values
 - <code>umap</code> or <code>tSNE</code> reduction: 
   - used for scatterplots
 - <code>harmony</code> or <code>PCA</code> reduction:
-  - used as corrected reduction for multiple samples
+  - used as corrected reduction for integrated datasets
 - <code>var.features</code> slot:
   - used as highly variable genes

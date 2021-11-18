@@ -37,7 +37,7 @@ To download the results of differential analyses between test and control sample
 
 ### Pseudobulk differential expression
 
-[Pseudobulk](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html#differential-expression-between-conditions) expression profiles are used for differential expression analyses between test and control groups.
+[Pseudobulk](http://bioconductor.org/books/3.14/OSCA.multisample/multi-sample-comparisons.html) expression profiles are used for differential expression analyses between test and control groups.
 
 {{< alert icon="💡" text="Pseudobulk performs better than other methods in <a href='https://www.biorxiv.org/content/biorxiv/early/2019/07/26/713412.full.pdf'>benchmarks</a>." >}}
 
@@ -45,7 +45,7 @@ To download the results of differential analyses between test and control sample
 
 ### Differential abundance
 
-A [differential abundance analysis](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html#differential-abundance) is included in the downloaded results for any cluster. A grid-based differential abundance plot also allows you to visualize regions of differential abundance: 
+A [differential abundance analysis](http://bioconductor.org/books/3.14/OSCA.multisample/differential-abundance.html) is included in the downloaded results for any cluster. A grid-based differential abundance plot also allows you to visualize regions of differential abundance: 
 
 {{< img-simple src="multi-abundance.png" alt="Differential Abundance" class="border-1" >}}
 

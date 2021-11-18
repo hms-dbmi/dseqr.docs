@@ -26,6 +26,6 @@ Then select integration types and provide a new dataset name. To begin integrati
 {{< img-simple src="integrate-submit.png" alt="Select Datasets" class="border-1" >}}
 
 
-{{< alert icon="💡" text="You can select either <a href='https://github.com/immunogenomics/harmony'>harmony</a> and/or <a href='http://bioconductor.org/books/release/OSCA/integrating-datasets.html#performing-mnn-correction'>fastMNN</a> and/or Azimuth integration types.</br>The integration type will be added to the end of the name. For example:</br>PBMCS_A_vs_B → PBMCS_A_vs_B<b>_harmony</b>" >}}
+{{< alert icon="💡" text="You can select either <a href='https://github.com/immunogenomics/harmony'>harmony</a> and/or <a href='http://bioconductor.org/books/3.14/OSCA.multisample/integrating-datasets.html#mnn-correction'>fastMNN</a> and/or reference-based integration.</br>The integration type will be added to the end of the name. For example:</br>PBMCS_A_vs_B → PBMCS_A_vs_B<b>_harmony</b>" >}}
 
 

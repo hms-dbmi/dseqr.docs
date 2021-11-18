@@ -30,9 +30,9 @@ The [OSCA](http://bioconductor.org/books/release/OSCA/) handbook was used to gui
 
 ### Feature selection
 
-{{< alert icon="💡" text="<a href='http://bioconductor.org/books/release/OSCA/feature-selection.html#feature-selection-subsetting'>Highly variable genes</a> are within the top 10% of biological variance." >}}
+{{< alert icon="💡" text="<a href='http://bioconductor.org/books/3.14/OSCA.basic/feature-selection.html'>Highly variable genes</a> are within the top 10% of biological variance." >}}
 
-{{< alert icon="💡" text="<a href='http://bioconductor.org/books/release/OSCA/feature-selection.html#apriori-hvgs'>A priori</a> genes of interest can also be specified by <a href='/docs/single-cell/subsetting#custom-genes-for-clustering'>subsetting</a>." >}}
+{{< alert icon="💡" text="<a href='http://bioconductor.org/books/3.14/OSCA.advanced/more-hvgs.html#apriori-hvgs'>A priori</a> genes of interest can also be specified by <a href='/docs/single-cell/subsetting#custom-genes-for-clustering'>subsetting</a>." >}}
 
 ### Dimensionality reduction and clustering
 
@@ -43,4 +43,4 @@ The [OSCA](http://bioconductor.org/books/release/OSCA/) handbook was used to gui
 
 ### Marker genes
 
-{{< alert icon="💡" text="<a href='http://bioconductor.org/books/release/OSCA/marker-detection.html#using-the-wilcoxon-rank-sum-test'>Wilcoxon rank sum tests</a> calculated with <a href='https://www.biorxiv.org/content/10.1101/653253v1'>presto</a> are used to sort up-regulated marker genes for each cluster." >}}
+{{< alert icon="💡" text="<a href='http://bioconductor.org/books/3.14/OSCA.basic/marker-detection.html'>Wilcoxon rank sum tests</a> calculated with <a href='https://www.biorxiv.org/content/10.1101/653253v1'>presto</a> are used to sort up-regulated marker genes for each cluster." >}}

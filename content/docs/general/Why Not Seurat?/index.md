@@ -20,7 +20,7 @@ toc: true
 
 ### Pseudobulk differential expression
 
-The *SingleCellExperiment* ecosystem provides [utilities](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html) to run pseudo-bulk differential expression analyses per cluster when there are multiple control and test samples. The OSCA handbook provides the following justifications for pseudo-bulking:
+The *SingleCellExperiment* ecosystem provides [utilities](http://bioconductor.org/books/3.14/OSCA.multisample/multi-sample-comparisons.html) to run pseudo-bulk differential expression analyses per cluster when there are multiple control and test samples. The OSCA handbook provides the following justifications for pseudo-bulking:
 
 > * Larger counts are more amenable to standard DE analysis pipelines designed for bulk RNA-seq data. Normalization is more straightforward and certain statistical approximations are more accurate [...] 
 > * Collapsing cells into samples reflects the fact that our biological replication occurs at the sample level. Each sample is represented no more than once for each condition, avoiding problems from unmodelled correlations between samples. Supplying the per-cell counts directly to a DE analysis pipeline would imply that each cell is an independent biological replicate, which is not true from an experimental perspective.
@@ -30,7 +30,7 @@ The *SingleCellExperiment* ecosystem provides [utilities](http://bioconductor.or
 
 ### Batch correction for pseudobulk
 
-For both workflows, integration is only used to align cells for clustering. The corrected values do not get used in downstream analyses. However, the OSCA workflow implements library size adjustment between samples with [multiBatchNorm](http://bioconductor.org/books/release/OSCA/integrating-datasets.html). Seurat does not have comparable functionality.
+For both workflows, integration is only used to align cells for clustering. The corrected values do not get used in downstream analyses. However, the OSCA workflow implements library size adjustment between samples with [multiBatchNorm](http://bioconductor.org/books/3.14/OSCA.multisample/integrating-datasets.html#slower-setup). Seurat does not have comparable functionality.
 
 
 {{< alert icon="💡" text="<i>multiBatchNorm</i> protects against situations where, for example, a particular transcript is detected in one sample but not another due to systematically smaller library sizes." >}}
@@ -38,7 +38,7 @@ For both workflows, integration is only used to align cells for clustering. The 
 
 ### Ambient expression
 
-The OSCA handbook provides [methods](http://bioconductor.org/books/release/OSCA/multi-sample-comparisons.html#ambient-problems) for dealing with ambient expression in multi-sample differential expression analyses.
+The OSCA handbook provides [methods](http://bioconductor.org/books/3.14/OSCA.multisample/ambient-problems.html) for dealing with ambient expression in multi-sample differential expression analyses.
 
 Ambient expression arrises from differential lysis between samples into the cell suspension. Seurat does not provide any recommendations for handling ambient expression.
 

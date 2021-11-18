@@ -30,7 +30,7 @@ Inclusion is usefull for selecting cells of interest to be re-clustered. This wi
 
 ### Custom genes for clustering
 
-You can optionally specify *a priori* [genes of interest](http://bioconductor.org/books/release/OSCA/feature-selection.html#apriori-hvgs) to focus on specific biologic questions:
+You can optionally specify *a priori* [genes of interest](http://bioconductor.org/books/3.14/OSCA.advanced/more-hvgs.html#apriori-hvgs) to focus on specific biologic questions:
 
 {{< img-simple src="qc-subset-custom.png" alt="Custom HVGs" class="border-1" >}}
 

@@ -19,7 +19,7 @@ A good starting point for cluster annotation is to transfer labels from an exist
 
 {{< img-simple src="annotate-transfer.png" alt="Label Transfer" class="border-1" >}}
 
-{{< alert icon="💡" text="Label transfer uses <a href='http://bioconductor.org/books/release/OSCA/cell-type-annotation.html'>SingleR</a> and includes external references from <a href='https://bioconductor.org/packages/release/data/experiment/manuals/celldex/man/celldex.pdf'>celldex</a>." >}}
+{{< alert icon="💡" text="Label transfer uses <a href='http://bioconductor.org/books/3.14/OSCA.basic/cell-type-annotation.html'>SingleR</a> and includes external references from <a href='https://bioconductor.org/packages/release/data/experiment/manuals/celldex/man/celldex.pdf'>celldex</a>." >}}
 
 {{< alert icon="💡" text="For cross-species transfer, datasets are first mapped to human homologs." >}}
 

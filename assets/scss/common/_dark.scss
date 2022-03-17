@@ -298,3 +298,7 @@ body.dark .alert-global {
 body.dark .figure-caption {
   color: $body-color-dark;
 }
+
+body.dark table {
+  @extend .table-dark;
+}

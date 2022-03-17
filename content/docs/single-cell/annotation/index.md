@@ -13,9 +13,11 @@ weight: 230
 toc: true
 ---
 
+{{< alert icon="💡" text="Automated annotation is also a feature of <a href='/docs/single-cell/reference-based/'>reference-based analysis</a>." >}}
+
 ### Label transfer
 
-A good starting point for cluster annotation is to transfer labels from an existing dataset or external reference. To do so, click the label transfer toggle and select a dataset to transfer labels from:
+A good starting point for cluster annotation is to transfer labels from an existing dataset. To do so, click the label transfer toggle and select a dataset to transfer labels from:
 
 {{< img-simple src="annotate-transfer.png" alt="Label Transfer" class="border-1" >}}
 

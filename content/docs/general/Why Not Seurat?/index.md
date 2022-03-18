@@ -13,9 +13,9 @@ weight: 120
 toc: true
 ---
 
-{{< alert icon="💡" text="Seurat and SingleCellExperiment objects can be <a href='docs/single-cell/add-dataset/'>imported</a> and exported." >}}
+{{< alert icon="💡" text="Seurat and SingleCellExperiment objects can be <a href='https://docs.dseqr.com/docs/single-cell/add-dataset/'>imported</a> and exported." >}}
 
-{{< alert icon="💡" text="We use Seurat reference-based analysis.</br></br> <a href='docs/single-cell/reference-based/'>Reference-based analysis</a> is available during dataset creation, subsetting, and integration." >}}
+{{< alert icon="💡" text="We use Seurat reference-based analysis.</br></br> <a href='https://docs.dseqr.com/docs/single-cell/reference-based/'>Reference-based analysis</a> is available during dataset creation, subsetting, and integration." >}}
 
 
 ### Pseudobulk differential expression

@@ -34,6 +34,7 @@ You can select a reference any time that you generate a new dataset:
 | Bone Marrow                               | 🧑      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Bone%20Marrow" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
 | Motor Cortex                              | 🧑      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Motor%20Cortex" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
 | Motor Cortex                              | 🐭      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Mouse%20-%20Motor%20Cortex" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
+| Differentiated CD4 T-cells                | 🧑      | ✅     | <a href="https://www.nature.com/articles/s41467-020-15543-y" target="_blank">📜</a> |
 | Tumor-Infiltrating T-cells                | 🐭      | ✅     | <a href="https://doi.org/10.6084/m9.figshare.12478571" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
 | Virus-Specific CD8 T-cells                | 🐭      | ✅     | <a href="https://doi.org/10.6084/m9.figshare.12489518" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
 | Virus-Specific CD4 T-cells                | 🐭      | ✅     | <a href="https://doi.org/10.6084/m9.figshare.16592693.v1" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |

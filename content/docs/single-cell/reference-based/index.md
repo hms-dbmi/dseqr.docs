@@ -29,15 +29,16 @@ You can select a reference any time that you generate a new dataset:
 
 | <div style="width:150px">Reference</div>  | Species | Demo   |  Source Link  |
 |-------------------------------------------|:-------:|:------:|:-------------:|
-| PBMC                                      | 🧑      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20PBMC" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
-| Lung                                      | 🧑      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Lung%20v1" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
-| Bone Marrow                               | 🧑      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Bone%20Marrow" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
-| Motor Cortex                              | 🧑      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Motor%20Cortex" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
-| Motor Cortex                              | 🐭      |        | <a href="https://azimuth.hubmapconsortium.org/references/#Mouse%20-%20Motor%20Cortex" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
+| PBMC                                      | 🧑      |  ➡️     | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20PBMC" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
+| Lung V1                                   | 🧑      |  ➡️     | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Lung%20v1" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
+| Lung V2                                   | 🧑      |  ➡️     | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Lung%20v2%20%28HLCA%29" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
+| Bone Marrow                               | 🧑      |  ➡️     | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Bone%20Marrow" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
+| Motor Cortex                              | 🧑      |  ➡️     | <a href="https://azimuth.hubmapconsortium.org/references/#Human%20-%20Motor%20Cortex" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
+| Motor Cortex                              | 🐭      |  ➡️     | <a href="https://azimuth.hubmapconsortium.org/references/#Mouse%20-%20Motor%20Cortex" target="_blank"><img src="Azimuth.png" alt="Azimuth" class="img-logo"></a> |
 | Differentiated CD4 T-cells                | 🧑      | ✅     | <a href="https://www.nature.com/articles/s41467-020-15543-y" target="_blank">📜</a> |
-| Tumor-Infiltrating T-cells                | 🐭      | 🔜     | <a href="https://doi.org/10.6084/m9.figshare.12478571" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
-| Virus-Specific CD8 T-cells                | 🐭      | 🔜     | <a href="https://doi.org/10.6084/m9.figshare.12489518" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
-| Virus-Specific CD4 T-cells                | 🐭      | 🔜     | <a href="https://doi.org/10.6084/m9.figshare.16592693.v1" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
+| Tumor-Infiltrating T-cells                | 🐭      | ✅     | <a href="https://doi.org/10.6084/m9.figshare.12478571" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
+| Virus-Specific CD8 T-cells                | 🐭      | ✅     | <a href="https://doi.org/10.6084/m9.figshare.12489518" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
+| Virus-Specific CD4 T-cells                | 🐭      | ✅     | <a href="https://doi.org/10.6084/m9.figshare.16592693.v1" target="_blank"><img src="projectils.png" alt="ProjectTIL" class="img-logo"></a> |
 | 10x PBMCs Atlas                           | 🧑      |        | <a href="https://github.com/immunogenomics/symphony/tree/main/pre-built_references" target="_blank"><img src="symphony.png" alt="Symphony" class="img-logo"></a> |
 | Cornell scMuscle                          | 🐭      | ✅     | <a href="https://datadryad.org/stash/dataset/doi:10.5061%2Fdryad.t4b8gtj34" target="_blank">💪</a> |
 

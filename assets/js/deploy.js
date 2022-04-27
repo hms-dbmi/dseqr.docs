@@ -90,7 +90,7 @@ const deployCountdown = (prevStart) => {
     var elapsed = deployTime - timeleft;
     var elapsedPercent = (elapsed / deployTime) * 100;
 
-    var result = new Date(timeleft * 1000).toISOString().substr(15, 4);
+    var result = new Date(timeleft * 1000).toISOString().substr(14, 5);
     deployButton.innerHTML = '~' + result;
     deployProgressBar.style.width = elapsedPercent + '%';
 

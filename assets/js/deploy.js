@@ -2,7 +2,7 @@ const deployButton = document.getElementById('deploy');
 const deployInfo = document.getElementById('deploy-info');
 const deployProgress = document.getElementById('deploy-progress');
 const deployProgressBar = document.getElementById('deploy-progress-bar');
-const deployTime = 60 * 10;
+const deployTime = 60 * 15;
 
 if (deployButton) {
   deployButton.addEventListener('click', (event) => {

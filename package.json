@@ -30,7 +30,7 @@
     "check": "hugo version"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
+    "@babel/cli": "^7.19.3",
     "@babel/core": "^7.17.7",
     "@babel/preset-env": "^7.16.11",
     "@fullhuman/postcss-purgecss": "^4.1.3",

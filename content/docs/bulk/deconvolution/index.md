@@ -13,7 +13,7 @@ weight: 340
 toc: true
 ---
 
-{{< alert icon="💡" text="Deconvolution can be run with <a href='https://www.nature.com/articles/s41467-018-08023-x'>MuSiC</a> (multi-sample only) or <a href='https://www.nature.com/articles/s41467-019-10802-z'>DWLS</a>." >}}
+{{< alert icon="💡" text="Deconvolution can be run with <a href='https://www.nature.com/articles/s41467-018-08023-x' target='_blank'>MuSiC</a> (multi-sample only) or <a href='https://www.nature.com/articles/s41467-019-10802-z' target='_blank'>DWLS</a>." >}}
 
 ### Run deconvolution
 

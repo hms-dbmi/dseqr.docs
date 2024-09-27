@@ -1,5 +1,5 @@
 const deployButton = document.getElementById('deploy');
-const deployInfo = document.getElementById('deploy-info');
+// const deployInfo = document.getElementById('deploy-info');
 const deployProgress = document.getElementById('deploy-progress');
 const deployProgressBar = document.getElementById('deploy-progress-bar');
 const deployTime = 60 * 15;
@@ -50,7 +50,8 @@ const handleInitDeploy = (isDeployed) => {
 };
 
 // run check on page load
-checkDeployed(handleInitDeploy);
+setDeployed()
+// checkDeployed(handleInitDeploy);
 
 const setDeployed = () => {
   localStorage.setItem('isDeployed', true);
@@ -59,7 +60,7 @@ const setDeployed = () => {
   deployProgress.style.visibility = 'hidden';
   deployButton.classList.remove('btn-primary', 'disabled');
   deployButton.classList.add('btn-warning');
-  deployInfo.setAttribute('style', 'display: none !important');
+  // deployInfo.setAttribute('style', 'display: none !important');
 };
 
 deploy = () => {

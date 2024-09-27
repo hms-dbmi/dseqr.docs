@@ -49,9 +49,6 @@ const handleInitDeploy = (isDeployed) => {
   }
 };
 
-// run check on page load
-setDeployed()
-// checkDeployed(handleInitDeploy);
 
 const setDeployed = () => {
   localStorage.setItem('isDeployed', true);
@@ -121,3 +118,8 @@ const runDeploy = () => {
     window.open('https://dseqr.com');
   }
 };
+
+
+// run check on page load
+setDeployed()
+// checkDeployed(handleInitDeploy);

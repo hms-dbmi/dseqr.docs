@@ -5,17 +5,15 @@
 {{ $clipboard := resources.Get "js/vendor/clipboard/dist/clipboard.min.js" -}}
 {{ if eq (hugo.Environment) "development" -}}
   {{ $app := resources.Get "js/app.js" -}}
-  <!-- {{ $deploy := resources.Get "js/deploy.js" -}} -->
   {{ $loadDemoVideo := resources.Get "js/loadDemoVideo.js" -}}
-  {{ $js := slice $lazysizes $clipboard $flexsearch $app $deploy $loadDemoVideo | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $clipboard $flexsearch $app $loadDemoVideo | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
   <script src="{{ $index.Permalink }}" defer></script>
 {{ else -}}
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
-  <!-- {{ $deploy := resources.Get "js/deploy.js" | minify -}} -->
   {{ $loadDemoVideo := resources.Get "js/loadDemoVideo.js" | minify -}}
-  {{ $js := slice $lazysizes $clipboard $flexsearch $instantPage $app $deploy $loadDemoVideo | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $clipboard $flexsearch $instantPage $app $loadDemoVideo | resources.Concat "main.js" -}}
   {{ $jsProd := $js | resources.Fingerprint "sha512" -}}
   {{ $indexProd := $index | resources.Minify | resources.Fingerprint "sha512" -}}
   <script src="{{ $jsProd.Permalink }}" integrity="{{ $jsProd.Data.Integrity }}" crossorigin="anonymous" defer></script>
